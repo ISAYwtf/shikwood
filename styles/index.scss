@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    //background: black;
+    background: {
+        image: url("../img/background.png");
+        attachment: fixed;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
