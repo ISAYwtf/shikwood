@@ -1,7 +1,5 @@
 jQuery(document).ready(function ($) {
-    let timer = setInterval(function () {
-        moveRight();
-    }, 7000);
+    let timerId = setInterval(() => moveRight(), 7000);
 
     let slideCount = $('#slider ul li').length,
         slideWidth = $('#slider ul li').width(),
@@ -32,9 +30,8 @@ jQuery(document).ready(function ($) {
             $('#slider ul').css('left', '');
         });
         indexCounter(-1);
-        console.log(slideIndex);
         slideText(slideIndex);
-        clearInterval(timer);
+        timer();
     };
 
     function moveRight() {
@@ -45,9 +42,8 @@ jQuery(document).ready(function ($) {
             $('#slider ul').css('left', '');
         });
         indexCounter(1);
-        console.log(slideIndex);
         slideText(slideIndex);
-        clearInterval(timer);
+        timer();
     };
 
     $('a.control_prev').click(function () {
@@ -101,6 +97,11 @@ jQuery(document).ready(function ($) {
         sliderDotItems[index].classList.add("active");
         slideTxt[index].id = "active";
         slideTxt[index].classList.add("animate__animated", "animate__fadeInUp");
+    }
+
+    function timer() {
+        clearInterval(timerId);
+        timerId = setInterval(() => moveRight(), 7000);
     }
 
 });
