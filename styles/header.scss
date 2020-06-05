@@ -185,14 +185,14 @@
                 border-radius: 3px;
                 padding-top: 6px;
                 padding-left: 16px;
+                font: {
+                    weight: 300;
+                    size: 22px;
+                    family: 'Montserrat', sans-serif;
+                }
 
                 &::placeholder {
                     color: #BCBCB7;
-                    font: {
-                        weight: 300;
-                        size: 22px;
-                        family: 'Montserrat', sans-serif;
-                    }
                 }
 
                 &:focus {

@@ -190,43 +190,6 @@
 
 }
 
-.grad {
-    height: 70px;
-    width: 100%;
-}
-
-#grad_1 {
-    background: linear-gradient(to top, #282727, rgba(40, 39, 39, 0.1));
-}
-
-#grad_2 {
-    background: linear-gradient(to bottom, #282727, rgba(40, 39, 39, 0.1));
-}
-
-#grad_3 {
-    height: 100px;
-    background: linear-gradient(to top, #282727, rgba(40, 39, 39, 0.3));
-}
-
-#grad_4 {
-    height: 150px;
-    background: linear-gradient(to bottom, #282727, rgba(40, 39, 39, 0.4));
-}
-
-.grad_black {
-    width: 100%;
-    height: 30px;
-}
-
-#grad_black_1 {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.1));
-}
-
-#grad_black_2{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.1));
-}
-
-
 .gallery {
     display: flex;
     flex-direction: column;
@@ -281,31 +244,27 @@
     }
 
     &__btn {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 80px;
-        text-align: center;
         background-color: rgba(0, 0, 0, 0.27);
 
-        & button {
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 300px;
-            height: 80px;
+            height: 100%;
             background: #F49A30;
             color: #282727;
             text-transform: uppercase;
+            text-decoration: none;
             transition: 0.2s;
-            font: {
-                family: "Montserrat", sans-serif;
-                size: 28px;
-                weight: 300;
-            }
-            border: {
-                width: 1px;
-                style: solid;
-                color: #F49A30;
-            }
+            font-size: 28px;
+            border: 1px solid #F49A30;
 
             &:hover {
-                cursor: pointer;
                 background: darken($color: #F49A30, $amount: 13);
                 border-color: darken($color: #F49A30, $amount: 13);
             }
@@ -322,7 +281,6 @@
     &__wrapp {
         display: flex;
         flex-direction: column;
-        // justify-content: space-evenly;
         align-items: center;
         margin: 0 auto;
         width: 1146px;
@@ -437,6 +395,7 @@
 
             &__locate {
                 display: flex;
+                align-items: center;
                 width: 412px;
                 height: 40px;
 
@@ -467,6 +426,11 @@
             & img {
                 margin: 0;
                 height: 100%;
+                transition: 0.2s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             & p {
@@ -475,6 +439,10 @@
                 font: {
                     size: 22px;
                     weight: 300;
+                }
+
+                & a {
+                    text-decoration: none;
                 }
 
                 & span {

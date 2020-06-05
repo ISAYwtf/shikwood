@@ -21,14 +21,13 @@ listBtn.addEventListener("click", function (event) {
 });
 
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 145) {
+    if (window.scrollY > 110) {
         logo.classList.remove("animate__animated", "animate__fadeInDown");
         logo.classList.add("animate__animated", "animate__fadeOutUp");
         menu.style.marginTop = "-145px";
-    } else if (window.scrollY <= 145 && logo.classList.contains("animate__animated")) {
+    } else if (window.scrollY <= 110 && logo.classList.contains("animate__animated")) {
         logo.classList.remove("animate__animated", "animate__fadeOutUp");
         logo.classList.add("animate__animated", "animate__fadeInDown");
         menu.style.marginTop = "";
     }
-    console.log(window.scrollY);
 });

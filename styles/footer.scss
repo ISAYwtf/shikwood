@@ -1,0 +1,122 @@
+.footer {
+    margin-top: 80px;
+    width: 100%;
+
+    &__wrapp {
+        height: 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 1302px;
+    }
+
+    &__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            width: 521px;
+            height: 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & img {
+                width: 80px;
+                margin: 0;
+            }
+
+            &__txt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 418px;
+                height: 104px;
+                font: {
+                    weight: 300;
+                    size: 22px;
+                }
+                text-transform: uppercase;
+
+                & a {
+                    height: 70px;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 70px;
+                }
+            }
+        }
+
+        &__right {
+            display: flex;
+            justify-content: space-between;
+            width: 643px;
+            height: 168px;
+        }
+
+        &__links {
+            align-self: center;
+            margin-bottom: 70px;
+            width: 353px;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font: {
+                size: 22px;
+                weight: 300;
+            }
+
+            & a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        &__geo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 207px;
+            &__city {
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            &__phone {
+                margin-top: 17px;
+
+                & p {
+                    font: {
+                        size: 22px;
+                        weight: 400;
+                    }
+                    line-height: 34px;
+                    margin: 0;
+                }
+            }
+
+            &__soc {
+                margin-top: 17px;
+
+                & a svg:hover {
+                    transition: 0.2s;
+                    fill: darken($color: #F49A30, $amount: 15)
+                }
+            }
+        }
+    }
+
+    &__copyright {
+
+        & h6 {
+            font: {
+                size: 16px;
+                weight: 300;
+            }
+        }
+    }
+}

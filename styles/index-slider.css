@@ -63,6 +63,16 @@ a.control_next:hover {
           box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 
+a.control_prev svg,
+a.control_next svg {
+  fill: white;
+}
+
+a.control_prev svg:hover,
+a.control_next svg:hover {
+  fill: #F49A30;
+}
+
 a.control_prev {
   left: 40px;
 }

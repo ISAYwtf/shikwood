@@ -51,6 +51,14 @@ a.control_next {
         background-color: rgba(255, 255, 255, 0.3);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     }
+
+    & svg {
+        fill: white;
+
+        &:hover {
+            fill: #F49A30;
+        }
+    }
 }
 
 a.control_prev {

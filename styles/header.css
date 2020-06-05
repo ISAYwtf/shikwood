@@ -229,34 +229,25 @@
   border-radius: 3px;
   padding-top: 6px;
   padding-left: 16px;
+  font-weight: 300;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu__search input::-webkit-input-placeholder {
   color: #BCBCB7;
-  font-weight: 300;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu__search input:-ms-input-placeholder {
   color: #BCBCB7;
-  font-weight: 300;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu__search input::-ms-input-placeholder {
   color: #BCBCB7;
-  font-weight: 300;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu__search input::placeholder {
   color: #BCBCB7;
-  font-weight: 300;
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .header__menu__search input:focus {
