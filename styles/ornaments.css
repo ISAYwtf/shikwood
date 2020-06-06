@@ -1,0 +1,123 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main__title h3 {
+  text-transform: uppercase;
+  width: 720px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.main__title__line {
+  position: relative;
+  top: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #F49A30;
+}
+
+.section-fix {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 100%;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-fix__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  width: 607px;
+}
+
+.section-fix__title h3 {
+  margin-left: 30px;
+  color: #F49A30;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.section-fix__blocks {
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 1310px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 365px;
+      grid-template-rows: 365px;
+  -ms-grid-columns: 400px 400px 400px;
+      grid-template-columns: 400px 400px 400px;
+  grid-gap: 54px;
+}
+
+.section-fix__blocks-item {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.section-fix__blocks-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.section-fix__blocks-item div {
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-fix__blocks-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-fix.frames .section-fix__title {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section-fix.frames .section-fix__title__line {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 30px;
+}
+/*# sourceMappingURL=ornaments.css.map */
