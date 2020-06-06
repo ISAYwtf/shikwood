@@ -111,11 +111,12 @@ a.control_next {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 600px;
+  position: relative;
+  margin-top: -300px;
   height: 265px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  z-index: 9;
 }
 
 .slider__about__text {
