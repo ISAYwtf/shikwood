@@ -125,6 +125,10 @@
                 background: #282727;
                 color: #F49A30;
             }
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 

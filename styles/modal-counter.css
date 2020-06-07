@@ -159,6 +159,10 @@
   color: #F49A30;
 }
 
+.modal-counter__form button:focus {
+  outline: none;
+}
+
 .modal-counter__close {
   fill: white;
   position: absolute;

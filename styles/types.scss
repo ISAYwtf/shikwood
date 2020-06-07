@@ -150,7 +150,7 @@
 }
 
 .swiper-container {
-    max-width: 1320px;
+    max-width: 1307px;
     height: 600px;
     overflow: initial;
 }
@@ -162,6 +162,7 @@
     filter: blur(4px) brightness(50%);
     transform: scale(0.8);
     transition: 0.2s;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
 
     &-active {
         transform: none;
@@ -188,7 +189,7 @@
     border-radius: 100%;
     background-size: 30px 30px;
     transition: 0.2s;
-    top: 100%;
+    top: 105%;
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.5);
@@ -202,13 +203,11 @@
 
 .swiper-button-next {
     background: url("../img/arrow_right.svg") no-repeat center;
-    // margin-right: 25px;
     right: 25px;
 }
 
 .swiper-button-prev {
     background: url("../img/arrow_left.svg") no-repeat center;
-    // margin-left: 25px;
     left: 25px;
 }
 

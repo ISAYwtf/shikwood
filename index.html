@@ -36,8 +36,8 @@
                     <img src="img/phone.svg" alt="phone">
                 </div>
                 <div class="header__logo__phone__num">
-                    <p>+7&nbsp;(916)&nbsp;251-75-65</p>
                     <p>+7&nbsp;(925)&nbsp;451-05-41</p>
+                    <p>+7&nbsp;(916)&nbsp;251-75-65</p>
                 </div>
                 <div class="header__logo__phone__flag">
                     <img src="img/flagrussia.svg" alt="flag">
@@ -461,7 +461,7 @@
                 <form class="modal-counter__form">
                     <div>
                         <label for="selectProject">Какой проект Вас интересует?<span>*</span></label>
-                        <select name="selectProject" id="selectProject" class="select">
+                        <select name="selectProject" id="selectProject" class="select" required>
                             <option value="Лестницы">Лестницы</option>
                             <option value="Отделка бани">Отделка бани</option>
                             <option value="Кухни / фасад кухни">Кухни / фасад кухни</option>
@@ -475,7 +475,7 @@
                     </div>
                     <div>
                         <label for="selectMaterial">Из какой породы дерева Вы желаете изготовить?<span>*</span></label>
-                        <select name="selectMaterial" id="selectMaterial" class="select">
+                        <select name="selectMaterial" id="selectMaterial" class="select" required>
                             <option value="Дуб">Дуб</option>
                             <option value="Ясень">Ясень</option>
                             <option value="Бук">Бук</option>
@@ -495,20 +495,20 @@
                     </div>
                     <div>
                         <label for="sizes">Размеры погонные / кв. м. <span>*</span></label>
-                        <input type="text" name="sizes" id="sizes">
+                        <input type="text" name="sizes" id="sizes" required>
                     </div>
                     <div>
                         <label for="location">Место монтажа / доставки (регион, район, населенный пункт)
                             <span>*</span></label>
-                        <input type="text" name="location" id="location">
+                        <input type="text" name="location" id="location" required>
                     </div>
                     <div>
                         <label for="name">Имя <span>*</span></label>
-                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя" required>
                     </div>
                     <div>
                         <label for="phone">Телефон <span>*</span></label>
-                        <input type="text" name="phone" id="phone" placeholder="+ 7 (___) ___ __ __">
+                        <input type="text" name="phone" id="phone" placeholder="+ 7 (___) ___ __ __" required>
                     </div>
                     <div>
                         <label for="comments">Дополнительные комментарии</label>
@@ -587,8 +587,8 @@
                     <div class="footer__block__geo">
                         <div class="footer__block__geo__city">г. Подольск Московская область</div>
                         <div class="footer__block__geo__phone">
-                            <p>+7&nbsp;(916)&nbsp;251-75-65</p>
                             <p>+7&nbsp;(925)&nbsp;451-05-41</p>
+                            <p>+7&nbsp;(916)&nbsp;251-75-65</p>
                         </div>
                         <div class="footer__block__geo__soc">
                             <a href="#">
