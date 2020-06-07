@@ -1,4 +1,5 @@
-let close = document.querySelector(".close");
+let close = document.querySelector(".close"),
+    block = document.querySelectorAll(".gallery");
 
 document.body.addEventListener("click", function(event) {
     let target = event.target;
@@ -17,4 +18,8 @@ close.addEventListener("click", function() {
     img.classList.remove("full");
     close.classList.add("none");
     document.body.style.overflow = "";
+});
+
+block.forEach(el => {
+    el.classList.add("gallery__block_" + el.children.length);
 });

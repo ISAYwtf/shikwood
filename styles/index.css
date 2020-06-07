@@ -221,6 +221,10 @@
   color: #282727;
 }
 
+.count__wrapp__btn button:focus {
+  outline: none;
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;

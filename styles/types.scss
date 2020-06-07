@@ -57,6 +57,10 @@
                     background-color: #F49A30;
                     color: #282727;
                 }
+
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
