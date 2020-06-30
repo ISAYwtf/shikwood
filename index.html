@@ -7,12 +7,13 @@
     <title>SHIKWOOD - Столярная мастерская</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/index-slider.css">
-    <link rel="stylesheet" href="styles/modal-counter.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/styles/body.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/index-slider.css">
+    <link rel="stylesheet" href="assets/styles/modal-counter.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <div class="header__logo">
             <div class="header__logo__geo">
                 <div class="header__logo__geo__ico">
-                    <img src="img/geoloc.svg" alt="geolocation">
+                    <img src="assets/img/geoloc.svg" alt="geolocation">
                 </div>
                 <div class="header__logo__geo__location">
                     <p>г.&nbsp;подольск</p>
@@ -33,14 +34,14 @@
             </div>
             <div class="header__logo__phone">
                 <div class="header__logo__phone__ico">
-                    <img src="img/phone.svg" alt="phone">
+                    <img src="assets/img/phone.svg" alt="phone">
                 </div>
                 <div class="header__logo__phone__num">
                     <p>+7&nbsp;(925)&nbsp;451-05-41</p>
                     <p>+7&nbsp;(916)&nbsp;251-75-65</p>
                 </div>
                 <div class="header__logo__phone__flag">
-                    <img src="img/flagrussia.svg" alt="flag">
+                    <img src="assets/img/flagrussia.svg" alt="flag">
                 </div>
             </div>
         </div>
@@ -49,7 +50,7 @@
                 <div class="header__menu__link">
                     <div class="header__menu__link__list">
                         <a href="#">виды работ</a>
-                        <img src="img/list.svg" alt="list">
+                        <img src="assets/img/list.svg" alt="list">
                         <div id="list" class="header__menu__link__list__choise none">
                             <a href="types.html#kitchens">кухни</a>
                             <!-- <hr> -->
@@ -69,14 +70,15 @@
                     <a href="index.html#contacts">контакты</a>
                 </div>
                 <div class="header__menu__search">
-                    <img src="img/search_1.svg" alt="search">
+                    <img src="assets/img/search_1.svg" alt="search">
                     <input type="search" placeholder="Поиск ...">
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="slider">
+
+        <!-- <section class="slider">
             <div id="slider">
                 <a href="#" class="control_next">
                     <svg width="30" height="40" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -103,10 +105,10 @@
                     </svg>
                 </a>
                 <ul>
-                    <li id="slide_1" class="slide"><img src="img/poster_1.png" alt="slider1"></li>
-                    <li id="slide_2" class="slide"><img src="img/poster_2.png" alt="slider2"></li>
-                    <li id="slide_3" class="slide"><img src="img/poster_3.png" alt="slider3"></li>
-                    <li id="slide_4" class="slide"><img src="img/poster_4.png" alt="slider4"></li>
+                    <li id="slide_1" class="slide"><img src="assets/img/poster_1.png" alt="slider1"></li>
+                    <li id="slide_2" class="slide"><img src="assets/img/poster_2.png" alt="slider2"></li>
+                    <li id="slide_3" class="slide"><img src="assets/img/poster_3.png" alt="slider3"></li>
+                    <li id="slide_4" class="slide"><img src="assets/img/poster_4.png" alt="slider4"></li>
                 </ul>
             </div>
 
@@ -121,7 +123,7 @@
                                 где рождаются деревянные шедевры для уюта в Вашем доме
                             </p>
                         </div>
-                        <img src="img/arrow_long.svg" alt="arrow">
+                        <img src="assets/img/arrow_long.svg" alt="arrow">
                         <div class="slider__about__text__wrapp">
                             <p>
                                 За нашими плечами более <span>10 лет</span> столярного опыта и более <span>50</span> крупных проектов
@@ -138,7 +140,7 @@
                                 Столярная мастерская <span>SHIKWOOD</span> — расскажет о <span>5 ступенях</span> индивидуального проектирования
                             </p>
                         </div>
-                        <img src="img/arrow_long.svg" alt="arrow">
+                        <img src="assets/img/arrow_long.svg" alt="arrow">
                         <div class="slider__about__text__wrapp">
                             <p>
                                 Деревянная <span>лестница</span> скажет о хозяине дома гораздо больше, чем он сам
@@ -155,7 +157,7 @@
                                 Столярная мастерская <span>SHIKWOOD</span> — предлагает Вам экономный вариант перелицовки фасадов Вашей прежней <span>кухни</span>
                             </p>
                         </div>
-                        <img src="img/arrow_long.svg" alt="arrow">
+                        <img src="assets/img/arrow_long.svg" alt="arrow">
                         <div class="slider__about__text__wrapp">
                             <p>
                                 Это минимальные затраты времени и средств с <span>wow-эффектом</span> от новой обстановки!
@@ -172,7 +174,7 @@
                                 Столярная мастерская <span>SHIKWOOD</span> — расскажет Вам о <span>топ 6 ошибок</span> отделки бани или сауны
                             </p>
                         </div>
-                        <img src="img/arrow_long.svg" alt="arrow">
+                        <img src="assets/img/arrow_long.svg" alt="arrow">
                         <div class="slider__about__text__wrapp">
                             <p>
                                 При заказе отделки бани или сауны у нас Вы получите набор <span>фирменных подарков</span>, которые добавят уюта в Ваш банный рай
@@ -192,6 +194,102 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section class="slider-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/poster_11.png" alt="shikwood">
+                        <div class="slider-about">
+                            <div class="slider-about__wrap slider-about__wrap--active">
+                                <div class="slider-about__text">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Столярная мастерская <span>SHIKWOOD</span> — это <span>100 кв.м.</span> современно оснащенного пространства,
+                                            <br>
+                                            где рождаются деревянные шедевры для уюта в Вашем доме
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/arrow_long.svg" alt="arrow">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            За нашими плечами более <span>10 лет</span> столярного опыта и более <span>50</span> крупных проектов
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="types.html#interior" class="slider-about__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/poster_22.png" alt="shikwood">
+                        <div class="slider-about">
+                            <div class="slider-about__wrap">
+                                <div class="slider-about__text">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Столярная мастерская <span>SHIKWOOD</span> — расскажет о <span>5 ступенях</span> индивидуального проектирования
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/arrow_long.svg" alt="arrow">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Деревянная <span>лестница</span> скажет о хозяине дома гораздо больше, чем он сам
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="types.html#stairs" class="slider-about__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/poster_33.png" alt="shikwood">
+                        <div class="slider-about">
+                            <div class="slider-about__wrap">
+                                <div class="slider-about__text">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Столярная мастерская <span>SHIKWOOD</span> — предлагает Вам экономный вариант перелицовки фасадов Вашей прежней <span>кухни</span>
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/arrow_long.svg" alt="arrow">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Это минимальные затраты времени и средств с <span>wow-эффектом</span> от новой обстановки!
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="types.html#kitchens" class="slider-about__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/poster_44.png" alt="shikwood">
+                        <div class="slider-about">
+                            <div class="slider-about__wrap">
+                                <div class="slider-about__text">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            Столярная мастерская <span>SHIKWOOD</span> — расскажет Вам о <span>топ 6 ошибок</span> отделки бани или сауны
+                                        </p>
+                                    </div>
+                                    <img src="assets/img/arrow_long.svg" alt="arrow">
+                                    <div class="slider-about__inner">
+                                        <p>
+                                            При заказе отделки бани или сауны у нас Вы получите набор <span>фирменных подарков</span>, которые добавят уюта в Ваш банный рай
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="types.html#bathes" class="slider-about__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
 
         <section class="types">
@@ -204,7 +302,7 @@
                 <div class="types__block__ico">
                     <div class="types__block__ico_wrapp">
                         <a href="types.html#kitchens" class="types__block__ico_wrapper">
-                            <!-- <img src="img/kitchen_ico.svg" alt="kitchen"> -->
+                            <!-- <img src="assets/img/kitchen_ico.svg" alt="kitchen"> -->
                             <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23.4375 0.897461H0V40.7122H23.4375V0.897461ZM11.7188 24.3179V12.6077H16.4062V24.3179H11.7188Z"/>
                                 <path d="M28.125 0.897461V40.7122H51.5625V0.897461H28.125ZM39.8438 24.3179H35.1562V12.6077H39.8438V24.3179Z"/>
@@ -224,7 +322,7 @@
                     </div>
                     <div class="types__block__ico_wrapp">
                         <a href="types.html#stairs" class="types__block__ico_wrapper">
-                            <!-- <img src="img/stair_ico.svg" alt="stair"> -->
+                            <!-- <img src="assets/img/stair_ico.svg" alt="stair"> -->
                             <svg viewBox="0 0 136 141" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M100.828 47.5302H126.621V136.132H18.7586V117.479H46.8966C47.5184 117.479 48.1149 117.234 48.5546 116.796C48.9943 116.359 49.2414 115.766 49.2414 115.148V94.1629H75.0345C75.6564 94.1629 76.2528 93.9173 76.6925 93.48C77.1323 93.0427 77.3793 92.4497 77.3793 91.8313V70.8465H98.4828C99.1046 70.8465 99.7011 70.6009 100.141 70.1636C100.581 69.7264 100.828 69.1333 100.828 68.5149V47.5302ZM121.931 0.897461H112.545C111.96 0.898076 111.397 1.11645 110.967 1.50952L8.47274 94.1629H4.68966C4.06777 94.1629 3.47135 94.4086 3.03161 94.8458C2.59187 95.2831 2.34483 95.8762 2.34483 96.4945C2.34483 97.1129 2.59187 97.706 3.03161 98.1433C3.47135 98.5805 4.06777 98.8262 4.68966 98.8262H9.37931C9.96264 98.8261 10.525 98.61 10.9568 98.22L21.1034 89.0476V112.816H25.7931V84.8364H25.762L63.3103 50.8933V89.4996H68V46.6541L110.207 8.49976V42.8669H114.897V5.56073H121.931C122.553 5.56073 123.149 5.31508 123.589 4.87781C124.029 4.44055 124.276 3.84749 124.276 3.2291C124.276 2.61071 124.029 2.01765 123.589 1.58038C123.149 1.14311 122.553 0.897461 121.931 0.897461ZM136 138.464C136 137.846 135.753 137.253 135.313 136.815C134.873 136.378 134.277 136.132 133.655 136.132H2.34483C1.72294 136.132 1.12653 136.378 0.686785 136.815C0.247044 137.253 0 137.846 0 138.464C0 139.082 0.247044 139.675 0.686785 140.113C1.12653 140.55 1.72294 140.796 2.34483 140.796H133.655C134.277 140.796 134.873 140.55 135.313 140.113C135.753 139.675 136 139.082 136 138.464Z"/>
                             </svg>
@@ -233,7 +331,7 @@
                     </div>
                     <div class="types__block__ico_wrapp">
                         <a href="types.html#bathes" class="types__block__ico_wrapper">
-                            <!-- <img src="img/bath_ico.svg" alt="bath"> -->
+                            <!-- <img src="assets/img/bath_ico.svg" alt="bath"> -->
                             <svg viewBox="0 0 136 141" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.939 102.833L12.3709 99.3299C11.4001 99.0058 10.3965 98.8425 9.37885 98.8425C5.33635 98.8425 1.76516 101.405 0.487227 105.218C-0.305327 107.583 -0.12712 110.113 0.993712 112.343C2.11454 114.572 4.03965 116.232 6.41732 117.023L16.4345 120.344C16.4321 120.176 16.4134 119.996 16.4134 119.831C16.4134 113.492 18.7723 107.494 22.939 102.833Z"/>
                                 <path d="M72.7598 119.35L39.8852 108.45C34.4171 109.544 30.4824 114.234 30.4824 119.831C30.4824 121.829 31.0264 123.767 32.0089 125.505L66.818 137.043C66.0723 135.341 65.655 133.464 65.655 131.491C65.655 126.295 68.5227 121.762 72.7598 119.35Z"/>
@@ -263,7 +361,7 @@
                 <div class="types__block__ico">
                     <div class="types__block__ico_wrapp">
                         <a href="types.html#interior" class="types__block__ico_wrapper">
-                            <!-- <img src="img/interior_ico.svg" alt="interior"> -->
+                            <!-- <img src="assets/img/interior_ico.svg" alt="interior"> -->
                             <svg viewBox="0 0 87 151" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.40662 6.67221C3.26242 5.01174 3.95479 3.38901 5.25484 2.34379C6.55145 1.2551 8.19482 0.663874 9.88854 0.67874C10.5626 0.684458 11.2321 0.773657 11.8832 0.946337C22.2344 3.64403 32.8637 5.13639 43.5581 5.39255C54.2526 5.13639 64.8807 3.64403 75.2319 0.946337C77.5436 0.304792 80.0235 0.83198 81.8752 2.35751C83.1683 3.40388 83.8561 5.02547 83.7096 6.68251C81.9736 23.4759 73.5954 43.5045 43.5581 43.5045C35.7247 43.7743 27.9622 41.9458 21.074 38.2074C21.0362 38.1891 21.0065 38.1594 20.9698 38.1411C8.87345 31.0509 4.58994 18.1194 3.40662 6.67221ZM66.8136 64.1277C64.9723 64.3301 63.195 64.5085 61.483 64.664L59.7767 46.6927C61.5482 46.1736 63.2831 45.5412 64.9734 44.7978L66.8136 64.1277ZM27.3396 46.6825L25.6333 64.6503C23.9201 64.5005 22.144 64.3221 20.3026 64.1151L22.1428 44.7738C23.832 45.5217 25.5681 46.1587 27.3396 46.6825ZM7.09161 149.582C6.90507 150.173 6.35576 150.573 5.73663 150.569C5.3132 150.573 4.91152 150.383 4.64601 150.054C4.36907 149.724 4.25577 149.289 4.33817 148.868L16.0145 92.9423C18.6993 94.0299 21.4402 94.9756 24.2234 95.7761L7.09161 149.582ZM23.4681 115.774L25.1721 110.421H61.9327L63.6367 115.774H23.4681ZM82.7724 148.846C82.8605 149.274 82.7495 149.719 82.4691 150.054C82.2036 150.383 81.8019 150.573 81.3796 150.569C80.7559 150.573 80.2043 150.167 80.0212 149.571L62.8917 95.7715C65.6761 94.9699 68.4158 94.0242 71.1017 92.9366L82.7724 148.846ZM85.8154 75.1209C82.2814 81.7913 73.5897 87.2325 60.6876 90.8599C49.485 94.0104 37.6301 94.0104 26.4286 90.8599C13.5255 87.2325 4.8337 81.7913 1.30091 75.1209C0.384242 73.4307 0.536448 71.3631 1.68887 69.8238C2.90537 68.1279 4.99506 67.2931 7.04583 67.6831C19.1159 69.6957 31.3221 70.7799 43.5581 70.9274C55.7907 70.7799 67.9947 69.6946 80.0613 67.6831C82.1121 67.2931 84.2029 68.1279 85.4182 69.8238C86.5741 71.3608 86.7286 73.4295 85.8154 75.1209Z"/>
                             </svg>
@@ -272,7 +370,7 @@
                     </div>
                     <div class="types__block__ico_wrapp">
                         <a href="types.html#decor" class="types__block__ico_wrapper">
-                            <!-- <img src="img/decor_ico.svg" alt="decor"> -->
+                            <!-- <img src="assets/img/decor_ico.svg" alt="decor"> -->
                             <svg viewBox="0 0 150 151" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M74.9957 82.5359L62.3475 95.1749L94.561 127.365L107.209 114.726L74.9957 82.5359Z"/>
                                 <path d="M114.13 121.638L101.482 134.277L117.786 150.569H143.083L114.13 121.638Z"/>
@@ -296,7 +394,7 @@
                     </div>
                     <div class="types__block__ico_wrapp">
                         <a href="types.html" class="types__block__ico_wrapper">
-                            <!-- <img src="img/more_ico.svg" alt="more"> -->
+                            <!-- <img src="assets/img/more_ico.svg" alt="more"> -->
                             <svg viewBox="0 0 151 151" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M75.4791 0.678711C34.0577 0.678711 0.479126 34.2329 0.479126 75.6242C0.479126 117.015 34.0577 150.57 75.4791 150.57C116.901 150.57 150.479 117.015 150.479 75.6242C150.479 34.2329 116.901 0.678711 75.4791 0.678711ZM54.3845 101.387C50.246 101.387 48.1088 96.3495 51.0701 93.3906L68.8492 75.6242L51.0701 57.8577C49.2394 56.0286 49.2394 53.0627 51.0701 51.2335C52.9006 49.4041 55.8687 49.4041 57.6991 51.2335L78.7929 72.3119C80.6237 74.1411 80.6237 77.107 78.7929 78.9361L57.6991 100.015C56.7839 100.929 55.5842 101.387 54.3845 101.387ZM104.574 78.9364L83.4804 100.015C82.5652 100.93 81.3654 101.387 80.166 101.387C76.0276 101.387 73.8904 96.3498 76.8517 93.3909L94.6305 75.6242L76.8514 57.8577C75.0206 56.0286 75.0206 53.0627 76.8514 51.2335C78.6819 49.4041 81.6499 49.4041 83.4804 51.2335L104.574 72.3119C106.405 74.1414 106.405 77.1073 104.574 78.9364Z"/>
                             </svg>
@@ -315,7 +413,7 @@
                     <div class="count__wrapp_quest__txt">
                         <p>Интересует <span>стоимость</span> Вашего проекта ?</p>
                     </div>
-                    <img src="img/arrow_long_count.svg" alt="arrow_long">
+                    <img src="assets/img/arrow_long_count.svg" alt="arrow_long">
                     <div class="count__wrapp_quest__txt">
                         <p>Мы готовы Вам с этим помочь</p>
                     </div>
@@ -327,19 +425,19 @@
         </section>
         <div class="grad" id="grad_2"></div>
 
-        <section class="gallery">
-            <div class="gallery__title">
-                <div class="gallery__title__line"></div>
+        <section class="index-gallery">
+            <div class="index-gallery__title">
+                <div class="index-gallery__title__line"></div>
                 <h3>Наши проекты</h3>
-                <div class="gallery__title__line"></div>
+                <div class="index-gallery__title__line"></div>
             </div>
-            <div class="gallery__block">
-                <a href="gallery.html#link_1"><img src="img/gallery/gallery_1.png" alt="gallery_1"></a>
-                <a href="gallery.html#link_2"><img src="img/gallery/gallery_2.png" alt="gallery_2"></a>
-                <a href="gallery.html#link_3"><img src="img/gallery/gallery_3.png" alt="gallery_3"></a>
+            <div class="index-gallery__block">
+                <a href="gallery.html#link_1"><img src="assets/img/gallery/gallery_1.png" alt="gallery_1"></a>
+                <a href="gallery.html#link_2"><img src="assets/img/gallery/gallery_2.png" alt="gallery_2"></a>
+                <a href="gallery.html#link_3"><img src="assets/img/gallery/gallery_3.png" alt="gallery_3"></a>
             </div>
             <div class="grad_black" id="grad_black_1"></div>
-            <div class="gallery__btn">
+            <div class="index-gallery__btn">
                 <a href="gallery.html">Фотогаллерея</a>
             </div>
             <div class="grad_black" id="grad_black_2"></div>
@@ -354,21 +452,21 @@
                 <div class="advant__wrapp__block">
                     <div class="advant__wrapp__block__row">
                         <div class="advant__wrapp__block__row__field">
-                            <img src="img/lamp.svg" alt="lamp">
+                            <img src="assets/img/lamp.svg" alt="lamp">
                             <p>Мы не ограничиваемся стандартными решениями и готовы предложить Вам свежие идеи</p>
                         </div>
                         <div class="advant__wrapp__block__row__field">
-                            <img src="img/customer.svg" alt="customer">
+                            <img src="assets/img/customer.svg" alt="customer">
                             <p>Мы дорожим качеством нашей работы и своей репутацией</p>
                         </div>
                     </div>
                     <div class="advant__wrapp__block__row">
                         <div class="advant__wrapp__block__row__field">
-                            <img src="img/support.svg" alt="support">
+                            <img src="assets/img/support.svg" alt="support">
                             <p>Самые подробные консультации о подходящих породах дерева, особенностях ухода за изделиями, эргономичности пространства</p>
                         </div>
                         <div class="advant__wrapp__block__row__field">
-                            <img src="img/instrum.svg" alt="instruments">
+                            <img src="assets/img/instrum.svg" alt="instruments">
                             <p>Доставляем и монтируем все самостоятельно,<br>без субподрядчиков и потерь качества</p>
                         </div>
                     </div>
@@ -383,28 +481,28 @@
                 <h3>Контакты</h3>
                 <div class="contacts__title__line"></div>
             </div>
-            <img src="img/map.png" alt="map">
+            <img src="assets/img/map.png" alt="map">
             <div class="contacts__over">
                 <div class="contacts__over__add">
                     <div class="contacts__over__add__locate">
-                        <img src="img/geoloc.svg" alt="locate">
+                        <img src="assets/img/geoloc.svg" alt="locate">
                         <p>г. Подольск Московская область</p>
                     </div>
                     <div class="contacts__over__add__locate">
-                        <img src="img/phone_orange.svg" alt="phone">
+                        <img src="assets/img/phone_orange.svg" alt="phone">
                         <p>
-                            +7 (916) 251-75-65&nbsp;&nbsp;&nbsp;Александр
-                            <br>
                             +7 (925) 451-04-41&nbsp;&nbsp;Никита
+                            <br>
+                            +7 (916) 251-75-65&nbsp;&nbsp;&nbsp;Александр
                         </p>
                     </div>
                     <div class="contacts__over__add__locate">
-                        <img src="img/mail.svg" alt="email">
+                        <img src="assets/img/mail.svg" alt="email">
                         <p>order@shikwood.ru</p>
                     </div>
                 </div>
                 <div class="contacts__over__insta">
-                    <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="assets/img/instagram.svg" alt="instagram"></a>
                     <p>Больше  работ в <a href="#"><span>Инстаграм</span></a>, присоединяйтесь!</p>
                 </div>
             </div>
@@ -426,7 +524,7 @@
                                 Оставляйте заявку и будьте уверены
                             </p>
                         </div>
-                        <img src="img/arrow_long_form.svg" alt="arrow_long">
+                        <img src="assets/img/arrow_long_form.svg" alt="arrow_long">
                         <div class="form__block__offer__txt">
                             <p>
                                 Мы делаем <span>точные замеры</span><br>
@@ -435,15 +533,17 @@
                         </div>
                     </div>
                     <div class="form__block__form">
-                        <form>
-                            <input type="text" name="name" id="inputName" placeholder="Ваше Имя">
-                            <input type="tel" name="phone" id="inputPhone" placeholder="+ 7 (___) - ___ - __ - __">
-                            <input type="email" name="email" id="inputEmail"placeholder="E-mail">
+                        <form action="assets/simple_mail.php" method="POST">
+                            <div class="form__block__form__input">
+                                <input type="text" name="name" id="inputName" placeholder="Ваше Имя">
+                                <input type="tel" name="phone" id="inputPhone" placeholder="+ 7 (___) - ___ - __ - __">
+                                <input type="email" name="email" id="inputEmail"placeholder="E-mail">
+                            </div>
+                            <div class="form__block__form__btn">
+                                <input type="submit" name="submit" value="Отправить">
+                                <p>Мы перезвоним Вам в ближайшее время</p>
+                            </div>
                         </form>
-                        <div class="form__block__form__btn">
-                            <button>Отправить</button>
-                            <p>Мы перезвоним Вам в ближайшее время</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -458,7 +558,7 @@
                     <h2>Заявка на расчет проекта</h2>
                     <h6><span>*</span> обязательные к заполнению поля</h6>
                 </div>
-                <form class="modal-counter__form">
+                <form action="assets/full_mail.php" method="POST" class="modal-counter__form">
                     <div>
                         <label for="selectProject">Какой проект Вас интересует?<span>*</span></label>
                         <select name="selectProject" id="selectProject" class="select" required>
@@ -514,7 +614,7 @@
                         <label for="comments">Дополнительные комментарии</label>
                         <textarea name="comments" id="comments"></textarea>
                     </div>
-                    <button>Отправить</button>
+                    <input type="submit" name="submit" value="Отправить">
                 </form>
             </div>
             <div class="modal-counter__close">
@@ -571,7 +671,7 @@
         <div class="footer__wrapp">
             <div class="footer__block">
                 <div class="footer__block__logo">
-                    <img src="img/logo.svg" alt="logo">
+                    <img src="assets/img/logo.svg" alt="logo">
                     <div class="footer__block__logo__txt">
                         <a href="index.html">shikwood</a>
                         столярная мастерская
@@ -625,11 +725,12 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-    <script src="js/header.js"></script>
-    <script src="js/index-slider.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/modal-counter.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/index-slider.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/modal-counter.js"></script>
 </body>
 
 </html>
