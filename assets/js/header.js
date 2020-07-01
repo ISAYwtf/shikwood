@@ -16,6 +16,7 @@ arrow.addEventListener("click", function (event) {
         arrow.style.transform = "";
         list.classList.remove("animate__animated", "animate__fadeIn");
         list.classList.add("animate__animated", "animate__fadeOut");
+        setTimeout(() => list.style.display = "none", 200);
     }
     list.classList.toggle("none");
 });
@@ -31,6 +32,7 @@ listBtn.addEventListener("click", function (event) {
         arrow.style.transform = "";
         list.classList.remove("animate__animated", "animate__fadeIn");
         list.classList.add("animate__animated", "animate__fadeOut");
+        setTimeout(() => list.style.display = "none", 200);
     }
     list.classList.toggle("none");
 });
@@ -52,6 +54,21 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+
+let pathUrl = document.location.pathname.split('/')[1],
+    urls = ['about.html', 'gallery.html'],
+    links =  ['types.html', 'ornaments.html'];;
+
+urls.forEach(item => {
+    if (pathUrl === item) {
+        menu.querySelector(`a[href='${item}']`).classList.add('header-menu__active');
+    }
+});
+
+if (pathUrl.includes(links[0]) || pathUrl.includes(links[1])) {
+    menu.querySelector(`.header__menu__link__list`).classList.add('header-menu__active');
+}
+
 
 $(function () {
 

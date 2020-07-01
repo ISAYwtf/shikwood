@@ -161,6 +161,11 @@ mark.current {
 .header__menu__link a {
   color: white;
   text-decoration: none;
+  border-bottom: 2px solid #282727;
+}
+
+.header__menu__link a:not(:first-child):hover {
+  border-bottom: 2px solid #F49A30;
 }
 
 .header__menu__link__list {
@@ -171,6 +176,10 @@ mark.current {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 197px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-bottom: 2px solid #282727;
 }
 
 .header__menu__link__list img {
@@ -200,15 +209,20 @@ mark.current {
 }
 
 .header__menu__link__list__choise a:not(:last-child) {
-  border-bottom: 1px solid rgba(188, 188, 183, 0.5);
+  border-bottom: 2px solid rgba(188, 188, 183, 0.5);
 }
 
 .header__menu__link__list__choise a:last-child {
   padding-bottom: 34px;
 }
 
+.header__menu__link__list__choise a:hover {
+  color: #F49A30;
+  border-bottom: 2px solid #F49A30;
+}
+
 .header__menu__link__list:hover {
-  cursor: pointer;
+  border-bottom: 2px solid #F49A30;
 }
 
 .header__menu__search {
@@ -304,6 +318,11 @@ mark.current {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__menu__link .header-menu__active,
+#list .header-menu__active {
+  border-bottom: 2px solid #F49A30;
 }
 
 .animate__animated {

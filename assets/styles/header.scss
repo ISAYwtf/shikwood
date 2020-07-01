@@ -136,12 +136,20 @@ mark {
             & a {
                 color: white;
                 text-decoration: none;
+                border-bottom: 2px solid #282727;
+
+                &:not(:first-child):hover {
+                    border-bottom: 2px solid #F49A30;
+                }
             }
 
             &__list {
                 display: flex;
                 justify-content: space-between;
                 width: 197px;
+                cursor: pointer;
+                transition: 0.2s;
+                border-bottom: 2px solid #282727;
 
                 & img {
                     width: 20px;
@@ -165,16 +173,21 @@ mark {
                     }
 
                     & a:not(:last-child) {
-                        border-bottom: 1px solid rgba(188, 188, 183, 0.5);
+                        border-bottom: 2px solid rgba(188, 188, 183, 0.5);
                     }
 
                     & a:last-child {
                         padding-bottom: 34px;
                     }
+
+                    & a:hover {
+                        color: #F49A30;
+                        border-bottom: 2px solid #F49A30;
+                    }
                 }
 
                 &:hover {
-                    cursor: pointer;
+                    border-bottom: 2px solid #F49A30;
                 }
             }
         }
@@ -250,6 +263,11 @@ mark {
             }
         }
     }
+}
+
+.header__menu__link .header-menu__active,
+#list .header-menu__active {
+    border-bottom: 2px solid #F49A30;
 }
 
 .animate__animated {
