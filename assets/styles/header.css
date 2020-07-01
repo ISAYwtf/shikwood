@@ -1,3 +1,11 @@
+mark {
+  background: #F49A30;
+}
+
+mark.current {
+  background: #cd740b;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -229,6 +237,7 @@
   border-radius: 3px;
   padding-top: 6px;
   padding-left: 16px;
+  padding-right: 15px;
   font-weight: 300;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
@@ -252,6 +261,49 @@
 
 .header__menu__search input:focus {
   outline: none;
+}
+
+.header__menu__search__btns {
+  display: none;
+  position: absolute;
+  right: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  width: 50px;
+  height: 48px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__menu__search__btns button {
+  height: 100%;
+  border: none;
+  background: white;
+  font-size: 22px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__menu__search__btns button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 1px solid #F49A30;
+}
+
+.header__menu__search__btns button:focus {
+  outline: none;
+}
+
+.header__menu__search__btns--type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .animate__animated {

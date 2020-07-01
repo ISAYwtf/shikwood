@@ -32,7 +32,6 @@ $(document).ready(function () {
             });
             slideAbout[index].classList.add("animate__animated", "animate__fadeInUp");
             slideAbout[index].classList.add("slider-about__wrap--active");
-            console.log(slideAbout[mySwiper.realIndex]);
         };
 
         mySwiper.on('slideChange', function() {
