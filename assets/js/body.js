@@ -20,8 +20,10 @@ modalCallClose.addEventListener('click', function() {
 
 let hoisting = document.querySelector('.hoisting');
 
-if (window.scrollY > window.screen.height * 2) {
-    hoisting.style.display = 'flex';
-} else if (window.scrollY <= window.screen.height * 2) {
-    hoisting.style.display = 'none';
-}
+window.addEventListener('scroll', function() {
+    if (window.scrollY > window.screen.height * 2) {
+        hoisting.style.display = 'flex';
+    } else if (window.scrollY <= window.screen.height * 2) {
+        hoisting.style.display = 'none';
+    }
+});
