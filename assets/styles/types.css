@@ -116,6 +116,7 @@
 }
 
 .section-fix {
+  padding-top: 80px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 100%;
@@ -264,6 +265,7 @@
 }
 
 .section-slide {
+  padding-top: 80px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 100%;

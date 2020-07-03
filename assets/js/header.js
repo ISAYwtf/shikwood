@@ -69,6 +69,14 @@ if (pathUrl.includes(links[0]) || pathUrl.includes(links[1])) {
     menu.querySelector(`.header__menu__link__list`).classList.add('header-menu__active');
 }
 
+// let contactLink = document.querySelector("a[href='index.html#contacts']"),
+//     contactPos = document.querySelector('#contacts').offsetTop - 225;
+
+// contactLink.addEventListener('click', function() {
+//     event.preventDefault();
+//     window.scrollTo(0, contactPos);
+// });
+
 
 $(function () {
 
@@ -80,7 +88,7 @@ $(function () {
         $content = $('main'),
         $results,
         currentClass = "current",
-        offsetTop = 50,
+        offsetTop = 275,
         currentIndex = 0;
 
     function jumpTo() {
@@ -90,7 +98,7 @@ $(function () {
             $results.removeClass(currentClass);
             if ($current.length) {
                 $current.addClass(currentClass);
-                position = $current.offset().top - offsetTop - 225;
+                position = $current.offset().top - offsetTop;
                 window.scrollTo(0, position);
             }
         }
