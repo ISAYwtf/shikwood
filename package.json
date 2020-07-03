@@ -1,0 +1,25 @@
+{
+  "name": "shikwoodtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISAYwtf/shikwood.git"
+  },
+  "author": "Ottara Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ISAYwtf/shikwood/issues"
+  },
+  "homepage": "https://github.com/ISAYwtf/shikwood#readme",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "jquery": "^3.5.1",
+    "mark.js": "^8.11.1",
+    "swiper": "^6.0.0"
+  }
+}
