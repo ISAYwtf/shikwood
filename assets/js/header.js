@@ -3,7 +3,8 @@ let listBtn = document.querySelector(".header__menu__link__list").children[0],
     menu = document.querySelector(".header__menu"),
     logo = document.querySelector(".header__logo"),
     arrow = document.querySelector(".header__menu__link__list").children[1],
-    header = document.querySelector(".header");
+    header = document.querySelector(".header"),
+    hoisting = document.querySelector('.hoisting');
 
 arrow.addEventListener("click", function (event) {
     event.preventDefault();
@@ -53,6 +54,12 @@ window.addEventListener("scroll", function () {
             menu.style.marginTop = "";
         }
     }
+
+    if (window.scrollY > window.screen.height * 2) {
+        hoisting.style.display = 'flex';
+    } else if (window.scrollY <= window.screen.height * 2) {
+        hoisting.style.display = 'none';
+    }
 });
 
 let pathUrl = document.location.pathname.split('/')[1],
@@ -68,15 +75,6 @@ urls.forEach(item => {
 if (pathUrl.includes(links[0]) || pathUrl.includes(links[1])) {
     menu.querySelector(`.header__menu__link__list`).classList.add('header-menu__active');
 }
-
-// let contactLink = document.querySelector("a[href='index.html#contacts']"),
-//     contactPos = document.querySelector('#contacts').offsetTop - 225;
-
-// contactLink.addEventListener('click', function() {
-//     event.preventDefault();
-//     window.scrollTo(0, contactPos);
-// });
-
 
 $(function () {
 

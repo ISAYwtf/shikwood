@@ -8,10 +8,11 @@ let close = document.querySelector(".modal-counter__close"),
     maxScrollY = 0;
 
 countBtn.addEventListener("click", function() {
-    modal.style.top = countBtn.offsetTop + 100 + "px";
+    modal.style.top = window.scrollY + "px";
     modal.style.display = "flex";
     modal.classList.remove("animate__animated", "animate__fadeOut");
     modal.classList.add("animate__animated", "animate__fadeIn");
+    document.body.style.overflow = 'hidden';
 });
 
 selectProject.addEventListener("change", function() {
@@ -37,4 +38,5 @@ close.addEventListener("click", function() {
     setTimeout(function() {
         modal.style.display = "none";
     }, 300);
+    document.body.style.overflow = '';
 });

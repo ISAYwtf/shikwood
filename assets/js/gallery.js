@@ -8,9 +8,8 @@ document.body.addEventListener("click", function(event) {
         target.parentNode.classList.add("full");
         close.classList.remove("none");
         document.body.style.overflow = "hidden";
+        hoisting.style.display = 'none';
     }
-
-
 });
 
 close.addEventListener("click", function() {
@@ -18,6 +17,9 @@ close.addEventListener("click", function() {
     img.classList.remove("full");
     close.classList.add("none");
     document.body.style.overflow = "";
+    if (window.scrollY > window.screen.height * 2) {
+        hoisting.style.display = 'flex';
+    }
 });
 
 block.forEach(el => {
@@ -31,9 +33,7 @@ block.forEach(el => {
 function createDiv(container) {
     let img = container.querySelectorAll("img")[0],
         wrapp = document.createElement("div");
-
     if (img.getAttribute("src") === "") {
-        console.log("true");
         img.remove();
     } else {
         container.append(wrapp);

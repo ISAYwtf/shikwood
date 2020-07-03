@@ -1,11 +1,11 @@
 .modal-counter_over {
   display: none;
+  overflow: scroll;
   position: absolute;
-  overflow: auto;
   margin: 0 auto;
   width: 100%;
-  padding: 5% 0;
-  top: 130%;
+  height: 100vh;
+  top: 110%;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
@@ -18,8 +18,8 @@
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 1306px;
-  height: 2100px;
+  width: 80vw;
+  height: 210%;
   background: rgba(244, 153, 48, 0.85);
   -webkit-box-shadow: 0 20px 40px black;
           box-shadow: 0 20px 40px black;

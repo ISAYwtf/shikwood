@@ -259,4 +259,36 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
+
+.hoisting {
+  position: fixed;
+  top: 80vh;
+  right: 5%;
+  display: none;
+  width: 80px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #F49A30;
+  font-size: 50px;
+  color: #F49A30;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 900;
+}
+
+.hoisting p {
+  line-height: 100%;
+  margin: 0;
+}
+
+.hoisting:hover {
+  color: white;
+  background-color: #F49A30;
+}
 /*# sourceMappingURL=body.css.map */
