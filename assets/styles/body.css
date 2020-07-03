@@ -576,4 +576,125 @@ body {
     opacity: 0;
   }
 }
+
+.modal-call {
+  display: none;
+  position: absolute;
+  width: 60%;
+  height: 60vh;
+  top: 20%;
+  left: 20%;
+  right: auto;
+  background: #272726;
+  -webkit-box-shadow: 0 0 30px #272726;
+          box-shadow: 0 0 30px #272726;
+  border-top: 2px solid #F49A30;
+  border-bottom: 2px solid #F49A30;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 999;
+}
+
+.modal-call__form {
+  margin: 0 auto;
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal-call__form h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.modal-call__form input {
+  height: 50px;
+  border: 1px solid #F49A30;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #F49A30;
+  font-size: 22px;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+.modal-call__form input:focus {
+  outline: none;
+}
+
+.modal-call__form input::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #BCBCB7;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.modal-call__form input:-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #BCBCB7;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.modal-call__form input::-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #BCBCB7;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.modal-call__form input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #BCBCB7;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.modal-call__form input[type="submit"] {
+  color: #282727;
+  background-color: #F49A30;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal-call__form input[type="submit"]:hover {
+  background-color: #cd740b;
+}
+
+.modal-call__form p {
+  margin: 0;
+  margin-top: -50px;
+}
+
+.modal-call__close {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 30px;
+}
+
+.modal-call__close svg {
+  fill: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal-call__close svg:hover {
+  cursor: pointer;
+  fill: #b3b3b3;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
 /*# sourceMappingURL=body.css.map */

@@ -3,8 +3,7 @@ let listBtn = document.querySelector(".header__menu__link__list").children[0],
     menu = document.querySelector(".header__menu"),
     logo = document.querySelector(".header__logo"),
     arrow = document.querySelector(".header__menu__link__list").children[1],
-    header = document.querySelector(".header"),
-    hoisting = document.querySelector('.hoisting');
+    header = document.querySelector(".header");
 
 arrow.addEventListener("click", function (event) {
     event.preventDefault();
@@ -53,12 +52,6 @@ window.addEventListener("scroll", function () {
             logo.classList.add("animate__animated", "animate__fadeInDown");
             menu.style.marginTop = "";
         }
-    }
-
-    if (window.scrollY > window.screen.height * 2) {
-        hoisting.style.display = 'flex';
-    } else if (window.scrollY <= window.screen.height * 2) {
-        hoisting.style.display = 'none';
     }
 });
 
