@@ -222,8 +222,8 @@ body {
 
 .hoisting {
     position: fixed;
-    top: 80vh;
-    right: 5%;
+    top: 87vh;
+    right: 10%;
     display: none;
     width: 80px;
     height: 80px;
@@ -244,5 +244,188 @@ body {
     &:hover {
         color: white;
         background-color: #F49A30;
+    }
+}
+
+.vdz_cb_widget {
+    display: block;
+    z-index: 9100;
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+
+    &:hover {
+        border: 2px solid rgba(244, 153, 48, 0.5);
+        background-color: #fff;
+
+        & span {
+            animation-name: manimate_i;
+            animation-delay: 0s;
+            animation-duration: 0.8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        & svg {
+            fill: #F49A30;
+        }
+
+        & i {
+            cursor: pointer;
+            color: rgba(244, 153, 48, 0.9);
+            animation: manimate_i 1s infinite ease-in-out
+        }
+    }
+
+    & span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        z-index: 9200;
+        transition: all 0.3s linear !important;
+        animation-name: manimate_i;
+        animation-delay: 2s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        & svg{
+            width: 40px;
+            height: 40px;
+            margin-top: 17px;
+            fill: white;
+        }
+    }
+}
+
+@keyframes manimate_i {
+    0%, 100%, 50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10%, 30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20%, 40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+}
+
+.vdz_cb_widget.vdz_cb_widget_btn:focus{
+    outline: none !important;
+}
+
+#vdz_cb_widget{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    border-radius: 50%;
+    border: 2px solid rgba(244, 153, 48, 0.3);
+    background-color: rgba(244, 153, 48, 0.5);
+    text-align: center;
+    transition:  all 0.8s linear;
+    opacity: 1;
+    z-index: 9999;
+
+    &:after,
+    &:before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        display: block;
+        animation-duration: 4s;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        box-sizing: content-box !important;
+    }
+
+    &:after {
+        background-color: rgba(244, 153, 48, 0.3);
+        animation-name: manimate_after;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        /*z-index: 4000;*/
+        opacity: 0;
+    }
+
+    &:before {
+        top: -2px;
+        left: -2px;
+        border: 2px solid rgba(244, 153, 48, 0.5);
+        animation-name: manimate_before;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        opacity: 0;
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes manimate_after {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+        transform: scale(1.5);
+
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes manimate_before {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    35% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes manimate {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    30% {
+        border-width: 10px;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }

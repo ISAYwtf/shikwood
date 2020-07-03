@@ -262,8 +262,8 @@ body {
 
 .hoisting {
   position: fixed;
-  top: 80vh;
-  right: 5%;
+  top: 87vh;
+  right: 10%;
   display: none;
   width: 80px;
   height: 80px;
@@ -290,5 +290,290 @@ body {
 .hoisting:hover {
   color: white;
   background-color: #F49A30;
+}
+
+.vdz_cb_widget {
+  display: block;
+  z-index: 9100;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+.vdz_cb_widget:hover {
+  border: 2px solid rgba(244, 153, 48, 0.5);
+  background-color: #fff;
+}
+
+.vdz_cb_widget:hover span {
+  -webkit-animation-name: manimate_i;
+          animation-name: manimate_i;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.vdz_cb_widget:hover svg {
+  fill: #F49A30;
+}
+
+.vdz_cb_widget:hover i {
+  cursor: pointer;
+  color: rgba(244, 153, 48, 0.9);
+  -webkit-animation: manimate_i 1s infinite ease-in-out;
+          animation: manimate_i 1s infinite ease-in-out;
+}
+
+.vdz_cb_widget span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 9200;
+  -webkit-transition: all 0.3s linear !important;
+  transition: all 0.3s linear !important;
+  -webkit-animation-name: manimate_i;
+          animation-name: manimate_i;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.vdz_cb_widget span svg {
+  width: 40px;
+  height: 40px;
+  margin-top: 17px;
+  fill: white;
+}
+
+@-webkit-keyframes manimate_i {
+  0%, 100%, 50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10%, 30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20%, 40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+}
+
+@keyframes manimate_i {
+  0%, 100%, 50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+  10%, 30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20%, 40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+}
+
+.vdz_cb_widget.vdz_cb_widget_btn:focus {
+  outline: none !important;
+}
+
+#vdz_cb_widget {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 78px;
+  border-radius: 50%;
+  border: 2px solid rgba(244, 153, 48, 0.3);
+  background-color: rgba(244, 153, 48, 0.5);
+  text-align: center;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#vdz_cb_widget:after, #vdz_cb_widget:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+#vdz_cb_widget:after {
+  background-color: rgba(244, 153, 48, 0.3);
+  -webkit-animation-name: manimate_after;
+          animation-name: manimate_after;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /*z-index: 4000;*/
+  opacity: 0;
+}
+
+#vdz_cb_widget:before {
+  top: -2px;
+  left: -2px;
+  border: 2px solid rgba(244, 153, 48, 0.5);
+  -webkit-animation-name: manimate_before;
+          animation-name: manimate_before;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+#vdz_cb_widget:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes manimate_after {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes manimate_after {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes manimate_before {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes manimate_before {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes manimate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  30% {
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes manimate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  30% {
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=body.css.map */
