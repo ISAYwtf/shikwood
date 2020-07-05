@@ -5,7 +5,11 @@
     margin-top: 80px;
     margin-bottom: 80px;
     width: 100%;
-    height: 690px;
+
+    @media screen and (max-width: 1440px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     &__title {
         display: flex;
@@ -16,9 +20,14 @@
             text-transform: uppercase;
             width: 486px;
             margin: 0 auto;
+
             font: {
                 weight: 300;
                 size: 50px;
+            }
+
+            @media screen and (max-width: 1440px) {
+                font-size: 44px;
             }
         }
 
@@ -26,6 +35,7 @@
             position: relative;
             top: 30px;
             flex-grow: 1;
+
             border-top: {
                 style: solid;
                 width: 2px;
@@ -35,89 +45,96 @@
     }
 
     &__block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 1120px;
-        height: 580px;
-        margin: auto auto;
+        margin-top: 50px;
+        display: grid;
+        max-width: 1167px;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-gap: 10px 200px;
 
-        &__ico {
+        @media screen and (max-width: 1440px) {
+            grid-gap: 10px 70px;
+        }
+
+        &_wrapp {
             display: flex;
-            justify-content: space-between;
-            width: 100%;
+            justify-content: center;
+            padding: 4px;
 
-            &_wrapp {
+            &:hover {
+                cursor: pointer;
+                padding: 0;
+
+                border: {
+                    style: solid;
+                    width: 4px;
+                    color: #F49A30;
+                }
+            }
+
+            &er {
                 display: flex;
-                justify-content: center;
-                width: 270px;
-                height: 270px;
-                padding: 4px;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                margin: auto;
+                max-width: 255px;
+                width: 93%;
+                max-height: 255px;
+                height: 93%;
+                text-decoration: none;
+                color: white;
+                padding: 2px;
 
                 &:hover {
-                    cursor: pointer;
-                    padding: 0;
+                    transition: 0.2s;
+
                     border: {
                         style: solid;
-                        width: 4px;
+                        width: 2px;
                         color: #F49A30;
+                    }
+
+                    color: #F49A30;
+                }
+
+                & svg {
+                    padding-top: 30px;
+                    height: 150px;
+                    fill: white;
+                    transition: 0.2s;
+                }
+
+                & h5 {
+                    padding-bottom: 25px;
+                    text-transform: uppercase;
+
+                    font: {
+                        size: 22px;
+                        weight: 300;
+                    }
+
+                    margin: 0;
+
+                    @media screen and (max-width: 1440px) {
+                        font-size: 20px;
                     }
                 }
 
-                &er {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    text-align: center;
-                    margin: auto;
-                    width: 255px;
-                    height: 255px;
-                    text-decoration: none;
-                    color: white;
+                & #_more_1 {
+                    width: 65%;
+                    padding-bottom: 0;
+                    margin: 0 auto;
+                    font-weight: 500;
+                    border-bottom: 4px solid #F49A30;
+                }
 
-                    &:hover {
-                        transition: 0.2s;
-                        border: {
-                            style: solid;
-                            width: 2px;
-                            color: #F49A30;
-                        }
-                        color: #F49A30;
-                    }
-
-                    & svg {
-                        padding-top: 30px;
-                        height: 150px;
-                        fill: white;
-                        transition: 0.2s;
-                    }
-
-                    & h5 {
-                        padding-bottom: 25px;
-                        text-transform: uppercase;
-                        font: {
-                            size: 22px;
-                            weight: 300;
-                        }
-                        margin: 0;
-                    }
-
-                    & #_more_1 {
-                        width: 65%;
-                        padding-bottom: 0;
-                        margin: 0 auto;
-                        font-weight: 500;
-                        border-bottom: 4px solid #F49A30;
-                    }
-
-                    & #_more_2 {
-                        width: 20%;
-                        padding-bottom: 0;
-                        margin: -15px auto 0 auto;
-                        font-weight: 500;
-                        border-bottom: 4px solid #F49A30;
-                    }
+                & #_more_2 {
+                    width: 20%;
+                    padding-bottom: 0;
+                    margin: -15px auto 0 auto;
+                    font-weight: 500;
+                    border-bottom: 4px solid #F49A30;
                 }
             }
         }
@@ -135,15 +152,22 @@
         display: flex;
         justify-content: space-between;
         margin: auto auto;
-        width: 1309px;
+        max-width: 1309px;
+        width: 92%;
         height: 110px;
 
         &__quest {
             text-transform: uppercase;
             letter-spacing: 2.5%;
+
             font: {
                 size: 28px;
                 weight: 300;
+            }
+
+            @media screen and (max-width: 1440px) {
+                font-size: 24px;
+                width: 50%;
             }
 
             & span {
@@ -153,11 +177,19 @@
             & p {
                 margin: 0;
             }
+
+            &__img {
+                background: url('../img/arrow_long_count.svg') no-repeat right;
+                width: 128%;
+                height: 40px;
+            }
         }
 
         &__btn {
             align-self: center;
-            width: 250px;
+            max-width: 250px;
+            min-width: 200px;
+            width: 20%;
             height: 80px;
 
             & button {
@@ -166,17 +198,24 @@
                     size: 28px;
                     weight: 300;
                 }
+
                 background: none;
+
                 border: {
                     style: solid;
                     width: 1px;
                     color: #F49A30;
                 }
+
                 text-transform: uppercase;
                 color: #F49A30;
                 width: 100%;
                 height: 100%;
                 transition: 0.2s;
+
+                @media screen and (max-width: 1440px) {
+                    font-size: 24px;
+                }
 
                 &:hover {
                     cursor: pointer;
@@ -200,7 +239,10 @@
     align-items: center;
     margin-top: 80px;
     width: 100%;
-    height: 730px;
+
+    @media screen and (max-width: 1440px) {
+        margin-top: 20px;
+    }
 
     &__title {
         display: flex;
@@ -211,9 +253,14 @@
             text-transform: uppercase;
             width: 600px;
             margin: 0 auto;
+
             font: {
                 weight: 300;
                 size: 50px;
+            }
+
+            @media screen and (max-width: 1440px) {
+                font-size: 44px;
             }
         }
 
@@ -221,6 +268,7 @@
             position: relative;
             top: 30px;
             flex-grow: 1;
+
             border-top: {
                 style: solid;
                 width: 2px;
@@ -231,13 +279,21 @@
 
     &__block {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        width: 1680px;
-        height: 375px;
+        max-width: 1680px;
+        width: 92%;
         margin: 80px auto 30px auto;
 
+        & a {
+            margin: 10px auto;
+            min-width: 300px;
+            width: 30%;
+        }
+
         & img {
+            width: 95%;
             box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
             transition: 0.2s;
 
@@ -278,7 +334,8 @@
 
 .advant {
     width: 100%;
-    height: 600px;
+    max-height: 600px;
+    min-height: 500px;
     margin: 0;
     background: #282727;
 
@@ -287,7 +344,8 @@
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 1146px;
+        max-width: 1146px;
+        width: 96%;
         height: 100%;
 
         &__title {
@@ -296,9 +354,14 @@
             & h3 {
                 margin-bottom: 0;
                 text-transform: uppercase;
+
                 font: {
                     size: 50px;
                     weight: 300;
+                }
+
+                @media screen and (max-width: 1440px) {
+                    font-size: 44px;
                 }
             }
         }
@@ -319,15 +382,25 @@
                     width: 500px;
 
                     & img {
-                        width: 100px;
+                        max-width: 100px;
+                        width: 21%;
                         margin-right: 24px;
+
+                        @media screen and (max-width: 1440px) {
+                            width: 14%;
+                        }
                     }
 
                     & p {
                         width: 368px;
+
                         font: {
                             size: 22px;
                             weight: 300;
+                        }
+
+                        @media screen and (max-width: 1440px) {
+                            font-size: 20px;
                         }
                     }
                 }
@@ -345,6 +418,19 @@
     width: 100%;
     height: 754px;
 
+    @media screen and (max-width: 1440px) {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__map {
+        background: url('../img/map.png') no-repeat;
+        background-position-x: 75%;
+        width: 100%;
+        height: 650px;
+        margin-top: 35px;
+    }
+
     &__title {
         display: flex;
         width: 100%;
@@ -354,9 +440,14 @@
             text-transform: uppercase;
             width: 600px;
             margin: 0 auto;
+
             font: {
                 weight: 300;
                 size: 50px;
+            }
+
+            @media screen and (max-width: 1440px) {
+                font-size: 44px;
             }
         }
 
@@ -364,6 +455,7 @@
             position: relative;
             top: 30px;
             flex-grow: 1;
+
             border-top: {
                 style: solid;
                 width: 2px;
@@ -373,6 +465,7 @@
     }
 
     & img {
+        height: 650px;
         margin-top: 40px;
     }
 
@@ -381,10 +474,11 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        margin-top: -653px;
+        margin-top: -650px;
         align-self: flex-start;
-        width: 824px;
-        height: 653px;
+        max-width: 824px;
+        width: 58%;
+        height: 650px;
         background: rgba(40, 39, 39, 0.7);
         z-index: 10;
 
@@ -411,9 +505,14 @@
                 & p {
                     margin: 0 0 0 16px;
                     text-transform: uppercase;
+
                     font: {
                         size: 22px;
                         weight: 300;
+                    }
+
+                    @media screen and (max-width: 1440px) {
+                        font-size: 20px;
                     }
                 }
             }
@@ -440,6 +539,7 @@
             & p {
                 margin: 0 0 0 24px;
                 text-transform: uppercase;
+
                 font: {
                     size: 22px;
                     weight: 300;

@@ -8,12 +8,10 @@ mark.current {
 
 .header {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   height: 225px;
   z-index: 999;
-  -webkit-transition: height 0.4s ease;
-  transition: height 0.4s ease;
 }
 
 .header__logo {
@@ -23,8 +21,15 @@ mark.current {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1306px;
+  max-width: 1306px;
+  width: 94%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo {
+    height: 130px;
+  }
 }
 
 .header__logo__geo {
@@ -37,27 +42,48 @@ mark.current {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 312px;
+  max-width: 320px;
+  width: 25%;
   height: 54px;
   margin-top: 37px;
   margin-bottom: 54px;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__logo__geo {
+    max-width: 250px;
+  }
+}
+
 .header__logo__geo__ico {
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  min-width: 20px;
+  height: auto;
+  margin: auto 10px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo__geo__ico {
+    max-width: 30px;
+    margin: auto 5px auto 0;
+  }
 }
 
 .header__logo__geo__ico img {
-  width: auto;
-  height: 40px;
+  width: 100%;
+  height: auto;
 }
 
 .header__logo__geo__location {
   text-transform: uppercase;
-  line-height: 10px;
   font-size: 22px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo__geo__location {
+    font-size: 18px;
+  }
 }
 
 .header__logo__center {
@@ -84,6 +110,21 @@ mark.current {
   font-size: 70px;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__logo__center a {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo__center {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 20px;
+  }
+}
+
 .header__logo__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +135,8 @@ mark.current {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 321px;
+  max-width: 320px;
+  width: 25%;
   height: 62px;
   line-height: 20px;
   margin: 33px 0 50px 0;
@@ -102,23 +144,48 @@ mark.current {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__logo__phone {
+    font-size: 18px;
+    max-width: 250px;
+  }
+}
+
 .header__logo__phone__ico {
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  min-width: 20px;
+  height: auto;
+  margin: auto 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo__phone__ico {
+    max-width: 30px;
+    margin: auto 5px;
+  }
 }
 
 .header__logo__phone__ico img {
-  width: 40px;
+  width: 100%;
   height: auto;
 }
 
 .header__logo__phone__flag {
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  min-width: 20px;
+  height: auto;
+  margin: auto 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__logo__phone__flag {
+    max-width: 30px;
+    margin: auto 5px;
+  }
 }
 
 .header__logo__phone__flag img {
-  width: 40px;
+  width: 100%;
   height: auto;
 }
 
@@ -130,8 +197,16 @@ mark.current {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 1440px) {
+  .header__menu {
+    height: 70px;
+  }
+}
+
 .header__menu-wrapper {
-  width: 1307px;
+  max-width: 1306px;
+  width: 94%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,11 +216,17 @@ mark.current {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: 0 auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: auto auto;
   font-weight: 300;
   font-size: 22px;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu-wrapper {
+    font-size: 20px;
+  }
 }
 
 .header__menu__link {
@@ -155,7 +236,8 @@ mark.current {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 860px;
+  max-width: 860px;
+  width: 73%;
   text-transform: uppercase;
 }
 
@@ -176,11 +258,19 @@ mark.current {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 197px;
+  max-width: 197px;
+  width: 23%;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-bottom: 2px solid #282727;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu__link__list {
+    max-width: 175px;
+    width: 26%;
+  }
 }
 
 .header__menu__link__list img {
@@ -201,6 +291,12 @@ mark.current {
   background-color: rgba(53, 53, 53, 0.76);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu__link__list__choise {
+    margin-top: 49px;
+  }
 }
 
 .header__menu__link__list__choise a {
@@ -236,16 +332,26 @@ mark.current {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 314px;
+  max-width: 314px;
+  width: 24%;
 }
 
 .header__menu__search img {
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  min-width: 20px;
+  height: auto;
+  margin: auto 10px auto 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu__search img {
+    max-width: 30px;
+  }
 }
 
 .header__menu__search input {
-  width: 250px;
+  max-width: 250px;
+  width: 90%;
   height: 48px;
   border: none;
   font-size: 22px;
@@ -256,6 +362,13 @@ mark.current {
   font-weight: 300;
   font-size: 22px;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu__search input {
+    font-size: 20px;
+    height: 45px;
+  }
 }
 
 .header__menu__search input::-webkit-input-placeholder {
@@ -281,7 +394,6 @@ mark.current {
 .header__menu__search__btns {
   display: none;
   position: absolute;
-  right: 15%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -289,10 +401,17 @@ mark.current {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
-  width: 50px;
+  width: 78px;
   height: 48px;
+  margin-left: -13px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__menu__search__btns {
+    height: 45px;
+  }
 }
 
 .header__menu__search__btns button {
@@ -323,8 +442,6 @@ mark.current {
 
 .header-sticky {
   height: 80px;
-  -webkit-transition: height 0.4s ease;
-  transition: height 0.4s ease;
 }
 
 .header-sticky .header__logo {

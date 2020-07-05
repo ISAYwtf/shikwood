@@ -3,6 +3,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1440px) {
+  .footer {
+    margin-top: 20px;
+  }
+}
+
 .footer__wrapp {
   height: 233px;
   display: -webkit-box;
@@ -19,7 +25,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  width: 1302px;
+  max-width: 1302px;
+  width: 91%;
 }
 
 .footer__block {
@@ -33,7 +40,9 @@
 }
 
 .footer__block__logo {
-  width: 521px;
+  max-width: 521px;
+  width: 40%;
+  min-width: 470px;
   height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +57,7 @@
 
 .footer__block__logo img {
   width: 80px;
-  margin: 0;
+  margin: auto 10px auto 0;
 }
 
 .footer__block__logo__txt {
@@ -62,11 +71,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 418px;
+  max-width: 418px;
   height: 104px;
   font-weight: 300;
   font-size: 22px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__block__logo__txt {
+    font-size: 20px;
+  }
 }
 
 .footer__block__logo__txt a {
@@ -76,6 +91,12 @@
   font-size: 70px;
 }
 
+@media screen and (max-width: 1440px) {
+  .footer__block__logo__txt a {
+    font-size: 64px;
+  }
+}
+
 .footer__block__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,14 +104,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 643px;
+  max-width: 643px;
+  width: 50%;
   height: 168px;
 }
 
 .footer__block__links {
   -ms-flex-item-align: center;
       align-self: center;
-  margin-bottom: 70px;
   width: 353px;
   height: 75px;
   display: -webkit-box;
@@ -101,13 +122,21 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 10px auto 30px;
   font-size: 22px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__block__links {
+    font-size: 20px;
+  }
 }
 
 .footer__block__links a {
   color: white;
   text-decoration: none;
+  margin: 5px 15px;
 }
 
 .footer__block__geo {
@@ -121,7 +150,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 207px;
+  min-width: 207px;
 }
 
 .footer__block__geo__city {
@@ -138,6 +167,12 @@
   font-weight: 400;
   line-height: 34px;
   margin: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__block__geo__phone p {
+    font-size: 20px;
+  }
 }
 
 .footer__block__geo__soc {

@@ -38,7 +38,27 @@ listBtn.addEventListener("click", function (event) {
 });
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 150) {
+    if (window.screen.width > 1440) {
+        if (window.scrollY > 150) {
+            header.classList.add('header-sticky');
+        } else {
+            // setInterval(function() {
+            //     let headerTop = header.style.top.split('px')[0] + 0;
+            //     if (headerTop < 0) {
+            //         header.style.top = headerTop + 1 + 'px';
+            //     }
+            // }, 20);
+            header.classList.remove('header-sticky');
+            // logo.classList.remove("animate__animated", "animate__fadeOutUp");
+            // logo.classList.add("animate__animated", "animate__fadeInDown");
+        }
+    } else if (window.screen.width <= 1440 && window.screen.width > 768) {
+        if (window.scrollY > 70) {
+            header.classList.add('header-sticky');
+        } else {
+            header.classList.remove('header-sticky');
+        }
+    }
         // logo.classList.remove("animate__animated", "animate__fadeInDown");
         // logo.classList.add("animate__animated", "animate__fadeOutUp");
         // menu.style.marginTop = "-145px";
@@ -47,13 +67,15 @@ window.addEventListener("scroll", function () {
         // }
 
         // setTimeout(() => header.classList.add('header-sticky'), 200);
-        header.classList.add('header-sticky');
+        // let headerTop = header.style.top.split('px');
 
-    } else {
-        header.classList.remove('header-sticky');
-        // logo.classList.remove("animate__animated", "animate__fadeOutUp");
-        // logo.classList.add("animate__animated", "animate__fadeInDown");
-    }
+        // setInterval(function() {
+        //     let headerTop = header.style.top.split('px')[0] + 0;
+        //     if (headerTop >= -145) {
+        //         header.style.top = headerTop - 1 + 'px';
+        //     }
+        // }, 40);
+
     // } else if (window.scrollY <= 200 && logo.classList.contains("animate__animated")) {
     //     // header.style.height = "225px";
     //     // if (window.scrollY <= 100) {

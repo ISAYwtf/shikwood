@@ -16,7 +16,7 @@
     display: flex;
     margin: 0 auto;
     width: 80vw;
-    height: 210%;
+    height: 266%;
     background: rgba(244, 153, 48, 0.85);
     box-shadow: 0 20px 40px black;
     transition: 0.2s;
@@ -140,6 +140,11 @@
         width: 35px;
         z-index: 999;
         transition: 0.2s;
+
+        @media screen and (max-width: 1440px) {
+            right: 12%;
+            top: 4%;
+        }
 
         &:hover {
             cursor: pointer;
