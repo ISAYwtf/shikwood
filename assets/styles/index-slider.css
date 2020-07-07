@@ -27,6 +27,8 @@
   transition: 0.2s;
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+  background: url("../img/poster_11.png") center no-repeat;
+  background-size: contain;
 }
 
 .swiper-slide img {
@@ -59,6 +61,14 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   top: 75%;
+}
+
+@media screen and (max-width: 1440px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .swiper-button-next:hover,
@@ -157,6 +167,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .slider-about {
+    font-size: 16px;
+  }
+}
+
 .slider-about .slider-about__wrap {
   display: none;
   -webkit-box-pack: justify;
@@ -190,6 +206,12 @@
   height: 100px;
 }
 
+@media screen and (max-width: 1440px) {
+  .slider-about .slider-about__inner {
+    height: 60px;
+  }
+}
+
 .slider-about .slider-about__inner p {
   margin: 0;
 }
@@ -217,8 +239,8 @@
 
 @media screen and (max-width: 1440px) {
   .slider-about__btn {
-    font-size: 24px;
-    padding: 18px 20px;
+    font-size: 18px;
+    padding: 14px 18px;
   }
 }
 

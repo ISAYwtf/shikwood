@@ -25,6 +25,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  body {
+    padding-top: 150px;
+  }
+}
+
 ::-webkit-scrollbar {
   border: none;
   width: 10px;
@@ -91,6 +97,12 @@ body {
   background: #282727;
 }
 
+@media screen and (max-width: 1024px) {
+  .form {
+    height: 450px;
+  }
+}
+
 .form__wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +127,12 @@ body {
   margin-bottom: 70px;
 }
 
+@media screen and (max-width: 1024px) {
+  .form__title {
+    margin-bottom: 30px;
+  }
+}
+
 .form__title h3 {
   color: #F49A30;
   margin-bottom: 0;
@@ -126,6 +144,12 @@ body {
 @media screen and (max-width: 1440px) {
   .form__title h3 {
     font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .form__title h3 {
+    font-size: 38px;
   }
 }
 
@@ -150,6 +174,12 @@ body {
 @media screen and (max-width: 1440px) {
   .form__block__offer {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .form__block__offer {
+    font-size: 18px;
   }
 }
 
@@ -184,6 +214,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__block__form {
+    width: 300px;
+  }
 }
 
 .form__block__form__input {
@@ -235,6 +271,13 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .form__block__form form input {
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
 .form__block__form form input:focus {
   outline: none;
   background: none;
@@ -265,6 +308,12 @@ body {
   min-width: 200px;
 }
 
+@media screen and (max-width: 1024px) {
+  .form__block__form__btn {
+    min-width: 160px;
+  }
+}
+
 .form__block__form__btn input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -280,6 +329,13 @@ body {
   padding: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__block__form__btn input[type="submit"] {
+    font-size: 18px;
+    height: 60px;
+  }
 }
 
 .form__block__form__btn input[type="submit"]:hover {
@@ -658,6 +714,12 @@ body {
   z-index: 999;
 }
 
+@media screen and (max-width: 1440px) {
+  .modal-call {
+    height: 50vh;
+  }
+}
+
 .modal-call__form {
   margin: 0 auto;
   height: 100%;
@@ -686,6 +748,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .modal-call__form h2 {
+    font-size: 24px;
+  }
+}
+
 .modal-call__form input {
   height: 50px;
   border: 1px solid #F49A30;
@@ -700,6 +768,13 @@ body {
 @media screen and (max-width: 1440px) {
   .modal-call__form input {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .modal-call__form input {
+    font-size: 18px;
+    height: 35px;
   }
 }
 
@@ -733,6 +808,25 @@ body {
   color: #BCBCB7;
   font-size: 22px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-call__form input::-webkit-input-placeholder {
+    font-size: 18px;
+    height: 35px;
+  }
+  .modal-call__form input:-ms-input-placeholder {
+    font-size: 18px;
+    height: 35px;
+  }
+  .modal-call__form input::-ms-input-placeholder {
+    font-size: 18px;
+    height: 35px;
+  }
+  .modal-call__form input::placeholder {
+    font-size: 18px;
+    height: 35px;
+  }
 }
 
 .modal-call__form input[type="submit"] {
@@ -769,6 +863,12 @@ body {
 @media screen and (max-width: 1440px) {
   .modal-call__close {
     width: 23px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .modal-call__close {
+    width: 20px;
   }
 }
 

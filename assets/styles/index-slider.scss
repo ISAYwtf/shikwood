@@ -19,6 +19,8 @@
     justify-content: center;
     transition: 0.2s;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.7);
+    background: url('../img/poster_11.png') center no-repeat;
+    background-size: contain;
 
     & img {
         width: 100%;
@@ -46,6 +48,11 @@
     background-size: 30px 30px;
     transition: 0.2s;
     top: 75%;
+
+    @media screen and (max-width: 1440px) {
+        width: 20px;
+        height: 20px;
+    }
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.5);
@@ -128,6 +135,10 @@
 
     @media screen and (max-width: 1440px) {
         font-size: 20px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
     }
 
     & &__wrap {
@@ -152,6 +163,10 @@
         width: 92%;
         height: 100px;
 
+        @media screen and (max-width: 1440px) {
+            height: 60px;
+        }
+
         & p {
             margin: 0;
 
@@ -173,8 +188,8 @@
         }
 
         @media screen and (max-width: 1440px) {
-            font-size: 24px;
-            padding: 18px 20px;
+            font-size: 18px;
+            padding: 14px 18px;
         }
 
         text-transform: uppercase;

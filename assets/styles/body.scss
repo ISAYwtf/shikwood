@@ -22,6 +22,10 @@ body {
 
     @media screen and (max-width: 1440px) {
         padding-top: 200px;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 150px;
+        }
     }
 }
 
@@ -83,6 +87,10 @@ body {
     margin: 0;
     background: #282727;
 
+    @media screen and (max-width: 1024px) {
+        height: 450px;
+    }
+
     &__wrapp {
         display: flex;
         flex-direction: column;
@@ -97,6 +105,10 @@ body {
     &__title {
         margin-bottom: 70px;
 
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 30px;
+        }
+
         & h3 {
             color: #F49A30;
             margin-bottom: 0;
@@ -108,6 +120,10 @@ body {
 
             @media screen and (max-width: 1440px) {
                 font-size: 44px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 38px;
+                }
             }
         }
     }
@@ -128,6 +144,10 @@ body {
 
             @media screen and (max-width: 1440px) {
                 font-size: 24px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                }
             }
 
             & span {
@@ -155,6 +175,10 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media screen and (max-width: 1024px) {
+                width: 300px;
+            }
 
             &__input {
                 display: flex;
@@ -191,6 +215,11 @@ body {
 
                     @media screen and (max-width: 1440px) {
                         font-size: 20px;
+
+                        @media screen and (max-width: 1024px) {
+                            height: 40px;
+                            font-size: 18px;
+                        }
                     }
 
                     &:focus {
@@ -209,7 +238,10 @@ body {
                 text-align: center;
                 max-width: 250px;
                 min-width: 200px;
-                // height: 80px;
+
+                @media screen and (max-width: 1024px) {
+                    min-width: 160px;
+                }
 
                 & input[type="submit"] {
 
@@ -233,6 +265,11 @@ body {
                     height: 80px;
                     padding: 0;
                     transition: 0.2s;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 18px;
+                        height: 60px;
+                    }
 
                     &:hover {
                         cursor: pointer;
@@ -501,6 +538,10 @@ body {
     text-align: center;
     z-index: 999;
 
+    @media screen and (max-width: 1440px) {
+        height: 50vh;
+    }
+
     &__form {
         margin: 0 auto;
         height: 100%;
@@ -517,6 +558,10 @@ body {
 
             @media screen and (max-width: 1440px) {
                 font-size: 30px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 24px;
+                }
             }
         }
 
@@ -532,6 +577,11 @@ body {
 
             @media screen and (max-width: 1440px) {
                 font-size: 20px;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    height: 35px;
+                }
             }
 
             &:focus {
@@ -543,6 +593,11 @@ body {
                 color: #BCBCB7;
                 font-size: 22px;
                 font-weight: 300;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    height: 35px;
+                }
             }
 
             &[type="submit"] {
@@ -575,6 +630,10 @@ body {
 
         @media screen and (max-width: 1440px) {
             width: 23px;
+
+            @media screen and (max-width: 1024px) {
+                width: 20px;
+            }
         }
 
         & svg {

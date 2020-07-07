@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 1440px) {
   .types {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
   }
 }
@@ -40,6 +40,12 @@
 @media screen and (max-width: 1440px) {
   .types__title h3 {
     font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .types__title h3 {
+    font-size: 38px;
   }
 }
 
@@ -69,6 +75,15 @@
 @media screen and (max-width: 1440px) {
   .types__block {
     grid-gap: 10px 70px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .types__block {
+    -ms-grid-columns: (223px)[3];
+        grid-template-columns: repeat(3, 223px);
+    -ms-grid-rows: (223px)[2];
+        grid-template-rows: repeat(2, 223px);
   }
 }
 
@@ -112,6 +127,13 @@
   padding: 2px;
 }
 
+@media screen and (max-width: 1024px) {
+  .types__block_wrapper {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
 .types__block_wrapper:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -127,6 +149,12 @@
   fill: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .types__block_wrapper svg {
+    height: 100px;
+  }
 }
 
 .types__block_wrapper h5 {
@@ -199,6 +227,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__quest {
+    font-size: 18px;
+  }
+}
+
 .count__wrapp__quest span {
   color: #F49A30;
 }
@@ -219,8 +253,22 @@
       align-self: center;
   max-width: 250px;
   min-width: 200px;
-  width: 20%;
+  width: 27%;
   height: 80px;
+}
+
+@media screen and (max-width: 1440px) {
+  .count__wrapp__btn {
+    width: 21%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__btn {
+    min-width: 180px;
+    width: 19%;
+    height: 60px;
+  }
 }
 
 .count__wrapp__btn button {
@@ -242,6 +290,12 @@
 @media screen and (max-width: 1440px) {
   .count__wrapp__btn button {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__btn button {
+    font-size: 18px;
   }
 }
 
@@ -295,6 +349,12 @@
 @media screen and (max-width: 1440px) {
   .index-gallery__title h3 {
     font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .index-gallery__title h3 {
+    font-size: 38px;
   }
 }
 
@@ -357,6 +417,12 @@
   background-color: rgba(0, 0, 0, 0.27);
 }
 
+@media screen and (max-width: 1024px) {
+  .index-gallery__btn {
+    height: 60px;
+  }
+}
+
 .index-gallery__btn a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +443,13 @@
   transition: 0.2s;
   font-size: 28px;
   border: 1px solid #F49A30;
+}
+
+@media screen and (max-width: 1024px) {
+  .index-gallery__btn a {
+    font-size: 18px;
+    width: 200px;
+  }
 }
 
 .index-gallery__btn a:hover {
@@ -426,6 +499,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .advant__wrapp__title h3 {
+    font-size: 38px;
+  }
+}
+
 .advant__wrapp__block {
   width: 100%;
   height: 300px;
@@ -469,6 +548,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .advant__wrapp__block__row__field img {
+    width: 12%;
+  }
+}
+
 .advant__wrapp__block__row__field p {
   width: 368px;
   font-size: 22px;
@@ -478,6 +563,12 @@
 @media screen and (max-width: 1440px) {
   .advant__wrapp__block__row__field p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .advant__wrapp__block__row__field p {
+    font-size: 18px;
   }
 }
 
@@ -495,7 +586,6 @@
   padding-top: 80px;
   margin-bottom: 80px;
   width: 100%;
-  height: 754px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -511,6 +601,12 @@
   width: 100%;
   height: 650px;
   margin-top: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__map {
+    height: 500px;
+  }
 }
 
 .contacts__title {
@@ -532,6 +628,12 @@
 @media screen and (max-width: 1440px) {
   .contacts__title h3 {
     font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .contacts__title h3 {
+    font-size: 38px;
   }
 }
 
@@ -575,6 +677,13 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 1024px) {
+  .contacts__over {
+    height: 500px;
+    margin-top: -500px;
+  }
+}
+
 .contacts__over__add {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,6 +701,13 @@
   width: 413px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contacts__over__add {
+    margin-top: 90px;
+    margin-right: 0;
+  }
+}
+
 .contacts__over__add__locate {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,6 +717,12 @@
           align-items: center;
   width: 412px;
   height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__over__add__locate {
+    height: 30px;
+  }
 }
 
 .contacts__over__add__locate img {
@@ -621,6 +743,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .contacts__over__add__locate p {
+    font-size: 18px;
+  }
+}
+
 .contacts__over__insta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,11 +762,25 @@
   height: 70px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contacts__over__insta {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 422px;
+  }
+}
+
 .contacts__over__insta img {
   margin: 0;
   height: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__over__insta img {
+    height: 50px;
+  }
 }
 
 .contacts__over__insta img:hover {
@@ -651,6 +793,12 @@
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__over__insta p {
+    font-size: 20px;
+  }
 }
 
 .contacts__over__insta p a {
