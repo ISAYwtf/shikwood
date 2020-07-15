@@ -25,6 +25,10 @@ body {
 
         @media screen and (max-width: 1024px) {
             padding-top: 150px;
+
+            @media screen and (max-width: 768px) {
+                padding-top: 40px;
+            }
         }
     }
 }
@@ -61,11 +65,19 @@ body {
 #grad_3 {
     height: 100px;
     background: linear-gradient(to top, #282727, rgba(40, 39, 39, 0.3));
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 #grad_4 {
     height: 150px;
     background: linear-gradient(to bottom, #282727, rgba(40, 39, 39, 0.4));
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .grad_black {
@@ -89,6 +101,10 @@ body {
 
     @media screen and (max-width: 1024px) {
         height: 450px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__wrapp {
@@ -387,6 +403,13 @@ body {
                 width: 30px;
                 height: 30px;
                 margin-top: 14px;
+
+                @media screen and (max-width: 768px) {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
             }
         }
     }
@@ -430,6 +453,11 @@ body {
         width: 60px;
         height: 60px;
         line-height: 60px;
+
+        @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &:after,

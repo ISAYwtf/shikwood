@@ -31,6 +31,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
 ::-webkit-scrollbar {
   border: none;
   width: 10px;
@@ -69,10 +75,22 @@ body {
   background: linear-gradient(to top, #282727, rgba(40, 39, 39, 0.3));
 }
 
+@media screen and (max-width: 768px) {
+  #grad_3 {
+    display: none;
+  }
+}
+
 #grad_4 {
   height: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(#282727), to(rgba(40, 39, 39, 0.4)));
   background: linear-gradient(to bottom, #282727, rgba(40, 39, 39, 0.4));
+}
+
+@media screen and (max-width: 768px) {
+  #grad_4 {
+    display: none;
+  }
 }
 
 .grad_black {
@@ -100,6 +118,12 @@ body {
 @media screen and (max-width: 1024px) {
   .form {
     height: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .form {
+    display: none;
   }
 }
 
@@ -475,6 +499,15 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .vdz_cb_widget span svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
 @-webkit-keyframes manimate_i {
   0%, 100%, 50% {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
@@ -531,6 +564,13 @@ body {
     width: 60px;
     height: 60px;
     line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  #vdz_cb_widget {
+    width: 40px;
+    height: 40px;
   }
 }
 

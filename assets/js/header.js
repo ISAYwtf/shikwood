@@ -3,7 +3,8 @@ let listBtn = document.querySelector(".header__menu__link__list").children[0],
     menu = document.querySelector(".header__menu"),
     logo = document.querySelector(".header__logo"),
     arrow = document.querySelector(".header__menu__link__list").children[1],
-    header = document.querySelector(".header");
+    header = document.querySelector(".header"),
+    burger = document.querySelector(".header__logo__burger");
 
 arrow.addEventListener("click", function (event) {
     event.preventDefault();
@@ -35,6 +36,19 @@ listBtn.addEventListener("click", function (event) {
         setTimeout(() => list.style.display = "none", 200);
     }
     list.classList.toggle("none");
+});
+
+burger.addEventListener('click', function() {
+    if (menu.classList.contains("header__menu--active")) {
+        menu.classList.remove("animate__animated", "animate__fadeIn");
+        menu.classList.add("animate__animated", "animate__fadeOut");
+        setTimeout(() => menu.classList.remove("header__menu--active"), 200);
+    } else {
+        menu.classList.remove("animate__animated", "animate__fadeOut");
+        menu.classList.add("animate__animated", "animate__fadeIn");
+        menu.classList.add("header__menu--active");
+    }
+    // menu.classList.toggle("header__menu--active");
 });
 
 window.addEventListener("scroll", function () {

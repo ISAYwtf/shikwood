@@ -15,6 +15,10 @@
         margin: 0 auto;
         max-width: 1302px;
         width: 91%;
+
+        @media screen and (max-width: 768px) {
+            height: 100px;
+        }
     }
 
     &__block {
@@ -34,6 +38,12 @@
             @media screen and (max-width: 1024px) {
                 min-width: 370px;
                 width: 41%;
+
+                @media screen and (max-width: 768px) {
+                    min-width: 196px;
+                    width: auto;
+                    height: 55px;
+                }
             }
 
             & img {
@@ -42,6 +52,10 @@
 
                 @media screen and (max-width: 1024px) {
                     width: 70px;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
             }
 
@@ -50,7 +64,7 @@
                 flex-direction: column;
                 align-items: center;
                 max-width: 418px;
-                height: 104px;
+                height: auto;
                 font: {
                     weight: 300;
                     size: 22px;
@@ -66,7 +80,6 @@
                 }
 
                 & a {
-                    height: 70px;
                     color: white;
                     text-decoration: none;
                     font-size: 70px;
@@ -76,7 +89,17 @@
 
                         @media screen and (max-width: 1024px) {
                             font-size: 50px;
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 30px;
+                            }
                         }
+                    }
+                }
+
+                & span {
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
                     }
                 }
             }
@@ -88,6 +111,11 @@
             max-width: 643px;
             width: 50%;
             height: 168px;
+
+            @media screen and (max-width: 768px) {
+                width: 68%;
+                height: 80px;
+            }
         }
 
         &__links {
@@ -110,6 +138,11 @@
                 @media screen and (max-width: 1024px) {
                     font-size: 18px;
                     margin: 0 5px auto 10px;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                        width: 250px;
+                    }
                 }
             }
 
@@ -133,10 +166,18 @@
             &__city {
                 font-size: 16px;
                 text-transform: uppercase;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
 
             &__phone {
                 margin-top: 17px;
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 0;
+                }
 
                 & p {
                     font: {
@@ -151,6 +192,10 @@
 
                         @media screen and (max-width: 1024px) {
                             font-size: 18px;
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
@@ -158,6 +203,10 @@
 
             &__soc {
                 margin-top: 17px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
 
                 & a svg {
                     @media screen and (max-width: 1024px) {
@@ -185,6 +234,10 @@
             @media screen and (max-width: 1024px) {
                 font-size: 14px;
                 margin-top: 0;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
             }
         }
     }

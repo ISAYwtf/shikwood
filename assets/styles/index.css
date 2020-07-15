@@ -21,6 +21,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .types {
+    margin-top: 20px;
+  }
+}
+
 .types__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +55,31 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .types__title h3 {
+    font-size: 25px;
+    width: 270px;
+    margin: 0;
+  }
+}
+
+.types__title__arrow {
+  display: none;
+  background: url("../img/arrow_long.svg") no-repeat right;
+  width: 246px;
+  height: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .types__title__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
 .types__title__line {
   position: relative;
   top: 30px;
@@ -58,6 +89,13 @@
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #F49A30;
+}
+
+@media screen and (max-width: 768px) {
+  .types__title__line {
+    top: 14px;
+    display: none;
+  }
 }
 
 .types__block {
@@ -87,6 +125,21 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .types__block {
+    margin-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 613px;
+    width: 81%;
+    height: 85px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .types__block_wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,12 +150,30 @@
   padding: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .types__block_wrapp {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .types__block_wrapp:last-child {
+    display: none;
+  }
+}
+
 .types__block_wrapp:hover {
   cursor: pointer;
   padding: 0;
   border-style: solid;
   border-width: 4px;
   border-color: #F49A30;
+}
+
+@media screen and (max-width: 768px) {
+  .types__block_wrapp:hover {
+    border: none;
+  }
 }
 
 .types__block_wrapper {
@@ -143,6 +214,12 @@
   color: #F49A30;
 }
 
+@media screen and (max-width: 768px) {
+  .types__block_wrapper:hover {
+    border: none;
+  }
+}
+
 .types__block_wrapper svg {
   padding-top: 30px;
   height: 150px;
@@ -157,6 +234,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .types__block_wrapper svg {
+    height: 50px;
+    padding: 0;
+  }
+}
+
 .types__block_wrapper h5 {
   padding-bottom: 25px;
   text-transform: uppercase;
@@ -168,6 +252,13 @@
 @media screen and (max-width: 1440px) {
   .types__block_wrapper h5 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .types__block_wrapper h5 {
+    font-size: 16px;
+    padding: 0;
   }
 }
 
@@ -200,6 +291,12 @@
   background-color: #282727;
 }
 
+@media screen and (max-width: 768px) {
+  .count {
+    height: 80px;
+  }
+}
+
 .count__wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,6 +304,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto auto;
   max-width: 1309px;
   width: 92%;
@@ -233,6 +333,13 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__quest {
+    font-size: 16px;
+    width: 57%;
+  }
+}
+
 .count__wrapp__quest span {
   color: #F49A30;
 }
@@ -245,6 +352,12 @@
   background: url("../img/arrow_long_count.svg") no-repeat right;
   width: 128%;
   height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .count__wrapp__quest__img {
+    height: 20px;
+  }
 }
 
 .count__wrapp__btn {
@@ -268,6 +381,14 @@
     min-width: 180px;
     width: 19%;
     height: 60px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__btn {
+    min-width: 138px;
+    width: 130px;
+    height: 44px;
   }
 }
 
@@ -299,6 +420,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__btn button {
+    font-size: 16px;
+  }
+}
+
 .count__wrapp__btn button:hover {
   cursor: pointer;
   background-color: #F49A30;
@@ -327,6 +454,12 @@
 @media screen and (max-width: 1440px) {
   .index-gallery {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .index-gallery {
+    display: none;
   }
 }
 
@@ -459,10 +592,16 @@
 
 .advant {
   width: 100%;
-  max-height: 600px;
-  min-height: 500px;
+  height: 530px;
   margin: 0;
   background: #282727;
+}
+
+@media screen and (max-width: 768px) {
+  .advant {
+    background: none;
+    height: 300px;
+  }
 }
 
 .advant__wrapp {
@@ -480,6 +619,14 @@
   max-width: 1146px;
   width: 96%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .advant__wrapp {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 35px;
+  }
 }
 
 .advant__wrapp__title {
@@ -505,6 +652,20 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .advant__wrapp__title h3 {
+    font-size: 30px;
+    padding-top: 22px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advant__wrapp__title {
+    margin-bottom: 15px;
+  }
+}
+
 .advant__wrapp__block {
   width: 100%;
   height: 300px;
@@ -520,6 +681,12 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .advant__wrapp__block {
+    height: 205px;
+  }
+}
+
 .advant__wrapp__block__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +694,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advant__wrapp__block__row__field {
@@ -534,6 +704,9 @@
   display: -ms-flexbox;
   display: flex;
   width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advant__wrapp__block__row__field img {
@@ -554,6 +727,14 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .advant__wrapp__block__row__field img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .advant__wrapp__block__row__field p {
   width: 368px;
   font-size: 22px;
@@ -569,6 +750,14 @@
 @media screen and (max-width: 1440px) and (max-width: 1024px) {
   .advant__wrapp__block__row__field p {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .advant__wrapp__block__row__field p {
+    font-size: 16px;
+    max-width: 252px;
+    margin: 0;
   }
 }
 
@@ -595,6 +784,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 768px) {
+  .contacts {
+    margin-bottom: 40px;
+  }
+}
+
 .contacts__map {
   background: url("../img/map.png") no-repeat;
   background-position-x: 75%;
@@ -606,6 +801,14 @@
 @media screen and (max-width: 1024px) {
   .contacts__map {
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .contacts__map {
+    background-size: contain;
+    width: 1064px;
+    height: 360px;
   }
 }
 
@@ -684,6 +887,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .contacts__over {
+    height: 360px;
+    margin-top: -360px;
+  }
+}
+
 .contacts__over__add {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,13 +908,21 @@
   margin-top: 109px;
   margin-right: 101px;
   height: 242px;
-  width: 413px;
+  max-width: 413px;
+  width: 94%;
 }
 
 @media screen and (max-width: 1024px) {
   .contacts__over__add {
     margin-top: 90px;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .contacts__over__add {
+    margin-top: 13px;
+    height: 160px;
   }
 }
 
@@ -749,6 +967,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .contacts__over__add__locate p {
+    font-size: 16px;
+  }
+}
+
 .contacts__over__insta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +990,8 @@
   .contacts__over__insta {
     margin-bottom: 20px;
     margin-right: 0;
-    width: 422px;
+    max-width: 422px;
+    width: 96%;
   }
 }
 
@@ -798,6 +1023,12 @@
 @media screen and (max-width: 1024px) {
   .contacts__over__insta p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .contacts__over__insta p {
+    font-size: 16px;
   }
 }
 

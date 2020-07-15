@@ -7,6 +7,12 @@
   height: 72vh;
 }
 
+@media screen and (max-width: 768px) {
+  .slider-container {
+    display: none;
+  }
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
