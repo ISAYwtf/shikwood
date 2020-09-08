@@ -24,11 +24,7 @@ body {
         padding-top: 200px;
 
         @media screen and (max-width: 1024px) {
-            padding-top: 150px;
-
-            @media screen and (max-width: 768px) {
-                padding-top: 40px;
-            }
+            padding-top: 127px;
         }
     }
 }
@@ -42,7 +38,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: #F49A30;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

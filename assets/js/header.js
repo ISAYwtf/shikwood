@@ -66,7 +66,7 @@ window.addEventListener("scroll", function () {
             // logo.classList.remove("animate__animated", "animate__fadeOutUp");
             // logo.classList.add("animate__animated", "animate__fadeInDown");
         }
-    } else if (window.screen.width <= 1440 && window.screen.width > 768) {
+    } else if (window.screen.width <= 1440 && window.screen.width > 568) {
         if (window.scrollY > 70) {
             header.classList.add('header-sticky');
         } else {

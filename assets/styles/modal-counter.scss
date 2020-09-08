@@ -27,6 +27,8 @@
 
         @media screen and (max-width: 1024px) {
             font-size: 80%;
+            max-width: 510px;
+            width: 83%;
         }
 
         & span {
@@ -77,6 +79,12 @@
 
             & label {
                 margin-bottom: 20px;
+            }
+
+            & select option {
+                @media screen and (max-width: 1024px) {
+                    font-size: 16px;
+                }
             }
 
             & select,
