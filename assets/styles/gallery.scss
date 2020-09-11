@@ -5,6 +5,10 @@
     margin-top: 80px;
     width: 100%;
 
+    @media (max-width: 1024px) {
+        margin-top: 40px;
+    }
+
     & .title {
         display: flex;
         width: 100%;
@@ -17,6 +21,11 @@
             font: {
                 weight: 300;
                 size: 50px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 28px;
+                font-weight: 400;
             }
         }
 
@@ -36,15 +45,20 @@
 .gallery {
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 0 20px;
 }
 
 .gallery__block_5 {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
     grid-template-areas:
     "small1 small2 big big"
     "small3 small4 big big";
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
@@ -74,8 +88,12 @@
 
 .gallery__block_4 {
     display: grid;
-    grid-template-columns: 800px 800px;
+    grid-template-columns: minmax(250px, 800px) minmax(250px, 800px);
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
@@ -85,8 +103,12 @@
 
 .gallery__block_6 {
     display: grid;
-    grid-template-columns: 510px 510px 510px;
+    grid-template-columns: repeat(3, minmax(150px, 510px));
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
@@ -96,6 +118,12 @@
 
 .gallery__block_1 {
     width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+        width: 80%;
+    }
 
     & img {
         width: 100%;
@@ -105,8 +133,12 @@
 
 .gallery__block_2 {
     display: grid;
-    grid-template-columns: 800px 800px;
+    grid-template-columns: repeat(2, minmax(200px, 800px));
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
@@ -116,8 +148,12 @@
 
 .gallery__block_8 {
     display: grid;
-    grid-template-columns: repeat(2, 800px);
+    grid-template-columns: repeat(2, minmax(250px, 800px));
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
@@ -127,8 +163,12 @@
 
 .gallery__block_3 {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, minmax(150px, 500px));
     grid-gap: 40px;
+
+    @media (max-width: 1024px) {
+        grid-gap: 20px;
+    }
 
     & img {
         width: 100%;
