@@ -120,7 +120,11 @@ mark {
             text-transform: uppercase;
 
             @media screen and (max-width: 1024px) {
-                margin-left: -30%;
+                margin-left: -26%;
+
+                @media screen and (max-width: 768px) {
+                    margin-left: 0;
+                }
             }
 
             & a {
@@ -173,9 +177,13 @@ mark {
 
                 @media screen and (max-width: 1024px) {
                     font-size: 15px;
-                    max-width: 220px;
+                    width: 220px;
                     line-height: 18px;
                     height: 40px;
+
+                    @media screen and (max-width: 560px) {
+                        width: 65px;
+                    }
                 }
             }
 
@@ -183,6 +191,12 @@ mark {
                 @media screen and (max-width: 1024px) {
                     margin: 0;
                     font-weight: 300;
+                }
+            }
+
+            .header__logo__geo__ico {
+                @media screen and (min-width: 1025px) {
+                    display: none;
                 }
             }
 
