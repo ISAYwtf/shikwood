@@ -11,6 +11,12 @@
   background-color: #282727;
 }
 
+@media screen and (max-width: 768px) {
+  .count {
+    height: 80px;
+  }
+}
+
 .count__wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +25,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto auto;
-  width: 1309px;
+  max-width: 1309px;
+  width: 92%;
   height: 110px;
 }
 
@@ -30,6 +37,34 @@
   font-weight: 300;
 }
 
+@media screen and (max-width: 1440px) {
+  .count__wrapp__quest {
+    font-size: 24px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__quest {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__quest {
+    font-size: 16px;
+    width: 57%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) and (max-width: 560px) {
+  .count__wrapp__quest {
+    font-size: 14px;
+    max-width: 200px;
+    text-transform: none;
+  }
+}
+
 .count__wrapp__quest span {
   color: #F49A30;
 }
@@ -38,12 +73,64 @@
   margin: 0;
 }
 
+.count__wrapp__quest__img {
+  background: url("../../img/arrow_long_count.svg") no-repeat right;
+  width: 128%;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .count__wrapp__quest__img {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 560px) {
+  .count__wrapp__quest__img {
+    max-width: 275px;
+    margin-left: -16px;
+  }
+}
+
 .count__wrapp__btn {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 250px;
+  max-width: 250px;
+  min-width: 200px;
+  width: 27%;
   height: 80px;
+}
+
+@media screen and (max-width: 1440px) {
+  .count__wrapp__btn {
+    width: 21%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__btn {
+    min-width: 180px;
+    width: 19%;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__btn {
+    min-width: 138px;
+    width: 130px;
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) and (max-width: 560px) {
+  .count__wrapp__btn {
+    min-width: unset;
+    width: 110px;
+    height: 33px;
+    background: #F49A30;
+  }
 }
 
 .count__wrapp__btn button {
@@ -60,6 +147,31 @@
   height: 100%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1440px) {
+  .count__wrapp__btn button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) {
+  .count__wrapp__btn button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) {
+  .count__wrapp__btn button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (max-width: 1024px) and (max-width: 768px) and (max-width: 560px) {
+  .count__wrapp__btn button {
+    font-size: 14px;
+    color: #282727;
+  }
 }
 
 .count__wrapp__btn button:hover {
@@ -104,6 +216,13 @@
   font-size: 50px;
 }
 
+@media (max-width: 1024px) {
+  .main-types__title h3 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
 .main-types__title__line {
   position: relative;
   top: 30px;
@@ -129,6 +248,12 @@
           flex-direction: column;
 }
 
+@media (max-width: 1024px) {
+  .section-fix {
+    padding-top: 40px;
+  }
+}
+
 .section-fix__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +265,12 @@
   width: 607px;
 }
 
+@media (max-width: 1024px) {
+  .section-fix__title {
+    width: 400px;
+  }
+}
+
 .section-fix__title h3 {
   margin-left: 30px;
   color: #F49A30;
@@ -148,15 +279,45 @@
   font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+  .section-fix__title h3 {
+    font-size: 28px;
+  }
+}
+
+.section-fix__title__line {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .section-fix__title__line img {
+    width: 100%;
+  }
+}
+
 .section-fix__txt {
   margin: 0 auto;
-  width: 1265px;
+  max-width: 1265px;
+  width: 89%;
   margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+  .section-fix__txt {
+    margin-bottom: 20px;
+  }
 }
 
 .section-fix__txt p {
   line-height: 160%;
   font-size: 28px;
+}
+
+@media (max-width: 1024px) {
+  .section-fix__txt p {
+    font-size: 15px;
+    font-weight: 300;
+  }
 }
 
 .section-fix__txt p span {
@@ -169,10 +330,22 @@
   height: 700px;
 }
 
+@media (max-width: 1024px) {
+  .slider-container {
+    height: 500px;
+  }
+}
+
 .swiper-container {
   max-width: 1307px;
   height: 600px;
   overflow: initial;
+}
+
+@media (max-width: 1024px) {
+  .swiper-container {
+    height: 400px;
+  }
 }
 
 .swiper-slide {
@@ -279,6 +452,13 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 1024px) {
+  .section-slide {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .section-slide__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +470,12 @@
   width: 607px;
 }
 
+@media (max-width: 1024px) {
+  .section-slide__title {
+    width: 400px;
+  }
+}
+
 .section-slide__title h3 {
   margin-left: 30px;
   color: #F49A30;
@@ -298,9 +484,27 @@
   font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+  .section-slide__title h3 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+
+.section-slide__title__line {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .section-slide__title__line img {
+    width: 100%;
+  }
+}
+
 .article {
   margin: 0 auto;
-  width: 1286px;
+  max-width: 1286px;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,7 +518,8 @@
 }
 
 .article__title {
-  width: 650px;
+  max-width: 650px;
+  width: 94%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,6 +534,13 @@
   color: #F49A30;
   font-size: 50px;
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .article__title h3 {
+    font-size: 28px;
+    font-weight: 300;
+  }
 }
 
 .article__title h3 span {
@@ -409,6 +621,13 @@
   line-height: 140%;
 }
 
+@media (max-width: 1024px) {
+  .article__block__row__txt {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
 .article__block__row__txt p {
   width: 90%;
 }
@@ -452,6 +671,13 @@
   font-size: 28px;
   font-weight: 300;
   line-height: 140%;
+}
+
+@media (max-width: 768px) {
+  .article__block h6 {
+    font-size: 16px;
+    font-weight: 300;
+  }
 }
 
 .article__block h6 span {
