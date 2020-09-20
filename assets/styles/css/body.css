@@ -172,6 +172,7 @@ body {
 }
 
 .form__block {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +215,7 @@ body {
 }
 
 .form__block__offer__img {
-  background: url("../img/arrow_long_form.svg") no-repeat right;
+  background: url("../../img/arrow_long_form.svg") no-repeat right;
   width: 126%;
   height: 60px;
 }
@@ -361,6 +362,10 @@ body {
   background-color: #cd740b;
 }
 
+.form__block__form__btn input[type="submit"]:focus {
+  background: #F49A30;
+}
+
 .form__block__form__btn p {
   margin: 0;
   font-size: 16px;
@@ -370,6 +375,111 @@ body {
 @media screen and (max-width: 1440px) {
   .form__block__form__btn p {
     font-size: 14px;
+  }
+}
+
+.form__response {
+  position: absolute;
+  width: 40%;
+  height: 300px;
+  left: 30%;
+  top: 40%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__response svg {
+  width: 30%;
+  fill: white;
+  -webkit-animation-name: form-response;
+          animation-name: form-response;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media (max-width: 770px) {
+  .form__response svg {
+    width: 50%;
+  }
+}
+
+.form__response p {
+  font-size: 30px;
+  font-weight: 500;
+  width: 65%;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .form__response p {
+    font-size: 22px;
+    width: unset;
+  }
+}
+
+@media (max-width: 770px) {
+  .form__response {
+    top: 45%;
+    left: 20%;
+    height: 240px;
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes form-response {
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  16% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  23% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes form-response {
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  16% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  20% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  23% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -755,6 +865,7 @@ body {
 }
 
 .modal-call__form {
+  position: relative;
   margin: 0 auto;
   height: 100%;
   width: 40%;
@@ -884,6 +995,65 @@ body {
 @media screen and (max-width: 1440px) {
   .modal-call__form p {
     margin: 0;
+  }
+}
+
+.modal-call__form__response {
+  position: absolute;
+  width: 100%;
+  height: 260px;
+  left: 0;
+  top: 30%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-call__form__response svg {
+  width: 30%;
+  fill: #F49A30;
+  -webkit-animation-name: form-response;
+          animation-name: form-response;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media (max-width: 770px) {
+  .modal-call__form__response svg {
+    width: 50%;
+  }
+}
+
+.modal-call__form__response p {
+  font-size: 30px;
+  font-weight: 500;
+  width: 65%;
+  color: #F49A30;
+}
+
+@media (max-width: 770px) {
+  .modal-call__form__response p {
+    font-size: 22px;
+    width: unset;
+  }
+}
+
+@media (max-width: 770px) {
+  .modal-call__form__response {
+    top: 45%;
+    left: 20%;
+    height: 240px;
+    width: 60%;
   }
 }
 

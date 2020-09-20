@@ -4,7 +4,7 @@
     $mail = new PHPMailer;
     $mail->CharSet = 'utf-8';
 
-    if (isset($_POST['submit'])) {
+    // if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
@@ -34,11 +34,11 @@
         $mail->AltBody = '';
 
         if(!$mail->send()) {
-            echo 'Error';
+            echo '0';
         } else {
             // header('location: thank-you.html');
-            echo 'Success';
+            echo '1';
         }
-    }
+    // }
 
 ?>

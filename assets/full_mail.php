@@ -4,7 +4,9 @@
     $mail = new PHPMailer;
     $mail->CharSet = 'utf-8';
 
-    if (isset($_POST['submit'])) {
+    // if (isset($_POST['submit'])) {
+        $project = $_POST['project'];
+        $material = $_POST['material'];
         $size = $_POST['sizes'];
         $location = $_POST['location'];
         $name = $_POST['name'];
@@ -12,18 +14,6 @@
 
         if (isset($_POST['comments'])) {
             $comments = $_POST['comments'];
-        }
-
-        if (isset($_POST['otherProject'])) {
-            $project = $_POST['otherProject'];
-        } else {
-            $project = $_POST['selectProject'];
-        }
-
-        if (isset($_POST['otherMaterial'])) {
-            $material = $_POST['otherMaterial'];
-        } else {
-            $material = $_POST['selectMaterial'];
         }
 
         //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -59,11 +49,11 @@
         $mail->AltBody = '';
 
         if(!$mail->send()) {
-            echo 'Error';
+            echo '0';
         } else {
             // header('location: thank-you.html');
-            echo 'Success';
+            echo '1';
         }
-    }
+    // }
 
 ?>

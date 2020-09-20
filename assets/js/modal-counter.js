@@ -40,3 +40,66 @@ close.addEventListener("click", function() {
     }, 300);
     document.body.style.overflow = '';
 });
+
+let modalCounterForm = document.querySelector('.modal-counter').querySelector('form'),
+    responseBlockModalCounter = document.querySelector('.modal-counter__form__response');
+
+modalCounterForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    let formData = {
+        sizes: modalCounterForm.elements.sizes.value,
+        location: modalCounterForm.elements.location.value,
+        name: modalCounterForm.elements.name.value,
+        phone: modalCounterForm.elements.phone.value,
+        comments: modalCounterForm.elements.comments.value
+    };
+
+    if (modalCounterForm.elements.otherProject.value) {
+        formData.project = modalCounterForm.elements.otherProject.value;
+        console.log(formData.project);
+    } else {
+        formData.project = modalCounterForm.elements.selectProject.value;
+    }
+
+    if (modalCounterForm.elements.otherMaterial.value) {
+        formData.material = modalCounterForm.elements.otherMaterial.value;
+    } else {
+        formData.material = modalCounterForm.elements.selectMaterial.value;
+    }
+
+    let request = new XMLHttpRequest();
+
+    request.addEventListener('load', () => {
+        console.log(request.response);
+        if (request.response === '1') {
+            responseBlockModalCounter.style.display = 'flex';
+            responseBlockModalCounter.querySelector('svg').style.display = 'unset';
+            responseBlockModalCounter.querySelector('p').textContent = 'Заявка успешно отправлена';
+            responseBlockModalCounter.style.justifyContent = 'space-between';
+            modalCounterForm.elements.otherProject.value = '';
+            modalCounterForm.elements.otherMaterial.value = '';
+            modalCounterForm.elements.sizes.value = '';
+            modalCounterForm.elements.location.value = '';
+            modalCounterForm.elements.name.value = '';
+            modalCounterForm.elements.phone.value = '';
+            modalCounterForm.elements.comments.value = '';
+        } else  {
+            responseBlockModalCounter.style.display = 'flex';
+            responseBlockModalCounter.querySelector('svg').style.display = 'none';
+            responseBlockModalCounter.querySelector('p').innerHTML = 'Что-то пошло не так:( <br>Повторите попытку';
+            responseBlockModalCounter.style.justifyContent = 'center';
+        }
+    });
+
+    request.open('POST', 'assets/full_mail.php', true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    request.send(`project= ${encodeURIComponent(formData.project)} &material= ${encodeURIComponent(formData.material)}
+                &sizes= ${encodeURIComponent(formData.sizes)} &location= ${encodeURIComponent(formData.location)}
+                &name= ${encodeURIComponent(formData.name)} &phone= ${encodeURIComponent(formData.phone)}
+                &comments= ${encodeURIComponent(formData.comments)}`);
+
+    setTimeout(document.body.addEventListener('click', () => {
+        responseBlockModalCounter.style.display = 'none';
+    }), 1000);
+});
