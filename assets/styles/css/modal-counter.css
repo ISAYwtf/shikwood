@@ -72,6 +72,7 @@
 }
 
 .modal-counter__form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,10 +246,10 @@
 
 .modal-counter .modal-counter__form__response {
   position: absolute;
-  width: 40%;
+  width: 60%;
   height: 300px;
-  left: 30%;
-  bottom: -65%;
+  left: 20%;
+  bottom: 10%;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -280,6 +281,7 @@
 }
 
 .modal-counter .modal-counter__form__response p {
+  text-align: center;
   font-size: 30px;
   font-weight: 500;
   width: 65%;
@@ -293,12 +295,11 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 560px) {
   .modal-counter .modal-counter__form__response {
-    top: 45%;
-    left: 20%;
-    height: 240px;
-    width: 60%;
+    height: 250px;
+    left: 15%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=modal-counter.css.map */

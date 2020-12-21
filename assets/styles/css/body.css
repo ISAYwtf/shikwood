@@ -383,7 +383,7 @@ body {
   width: 40%;
   height: 300px;
   left: 30%;
-  top: 40%;
+  top: 10%;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -415,6 +415,7 @@ body {
 }
 
 .form__response p {
+  text-align: center;
   font-size: 30px;
   font-weight: 500;
   width: 65%;
@@ -1019,7 +1020,7 @@ body {
 
 .modal-call__form__response svg {
   width: 30%;
-  fill: #F49A30;
+  fill: white;
   -webkit-animation-name: form-response;
           animation-name: form-response;
   -webkit-animation-duration: 4s;
@@ -1035,10 +1036,11 @@ body {
 }
 
 .modal-call__form__response p {
+  text-align: center;
   font-size: 30px;
   font-weight: 500;
   width: 65%;
-  color: #F49A30;
+  color: white;
 }
 
 @media (max-width: 770px) {
@@ -1048,11 +1050,11 @@ body {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .modal-call__form__response {
-    top: 45%;
+    top: 25%;
     left: 20%;
-    height: 240px;
+    height: 170px;
     width: 60%;
   }
 }

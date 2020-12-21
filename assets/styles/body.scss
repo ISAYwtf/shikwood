@@ -315,7 +315,7 @@ body {
         width: 40%;
         height: 300px;
         left: 30%;
-        top: 40%;
+        top: 10%;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -334,6 +334,7 @@ body {
         }
 
         p {
+            text-align: center;
             font-size: 30px;
             font-weight: 500;
             width: 65%;
@@ -725,7 +726,7 @@ body {
 
             svg {
                 width: 30%;
-                fill: #F49A30;
+                fill: white;
                 animation-name: form-response;
                 animation-duration: 4s;
                 animation-iteration-count: infinite;
@@ -736,10 +737,11 @@ body {
             }
 
             p {
+                text-align: center;
                 font-size: 30px;
                 font-weight: 500;
                 width: 65%;
-                color: #F49A30;
+                color: white;
 
                 @media (max-width: 770px) {
                     font-size: 22px;
@@ -747,10 +749,10 @@ body {
                 }
             }
 
-            @media (max-width: 770px) {
-                top: 45%;
+            @media (max-width: 768px) {
+                top: 25%;
                 left: 20%;
-                height: 240px;
+                height: 170px;
                 width: 60%;
             }
         }
